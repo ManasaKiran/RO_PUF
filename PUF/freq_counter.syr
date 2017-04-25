@@ -1,0 +1,615 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: freq_counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "freq_counter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "freq_counter"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : freq_counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\ROwithPUF.vhd" into library work
+Parsing entity <RO>.
+Parsing architecture <Behavioral> of entity <ro>.
+Parsing VHDL file "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\puf_design.vhd" into library work
+Parsing entity <puf_design>.
+Parsing architecture <Behavioral> of entity <puf_design>.
+Parsing VHDL file "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" into library work
+Parsing entity <OSC_sel>.
+Parsing architecture <Behavioral> of entity <osc_sel>.
+Parsing VHDL file "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" into library work
+Parsing entity <freq_counter>.
+Parsing architecture <Behavioral> of entity <freq_counter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <freq_counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <OSC_sel> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <puf_design> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RO> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 51: osc_out1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 52: osc_out2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 55: osc_out1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 56: osc_out2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 59: osc_out1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 60: osc_out2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 64: osc_out should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 65: counter1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 67: osc_out should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 68: counter2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 71: counter1 should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <freq_counter>.
+    Related source file is "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd".
+    Found 17-bit register for signal <slow_clk>.
+    Found 17-bit adder for signal <slow_clk[16]_GND_5_o_add_0_OUT> created at line 58.
+    Found 32-bit adder for signal <counter1[31]_GND_5_o_add_3_OUT> created at line 65.
+    Found 32-bit adder for signal <counter2[31]_GND_5_o_add_6_OUT> created at line 68.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <counter2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <compared_value>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator lessequal for signal <counter1[31]_counter2[31]_LessThan_9_o> created at line 71
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred  65 Latch(s).
+	inferred   1 Comparator(s).
+Unit <freq_counter> synthesized.
+
+Synthesizing Unit <OSC_sel>.
+    Related source file is "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd".
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <OSC_sel> synthesized.
+
+Synthesizing Unit <puf_design>.
+    Related source file is "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\puf_design.vhd".
+    Summary:
+	no macro.
+Unit <puf_design> synthesized.
+
+Synthesizing Unit <RO>.
+    Related source file is "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\ROwithPUF.vhd".
+        RO_ChainLength = 5
+    Set property "KEEP = TRUE" for signal <RO_PATH_INV<4>>.
+    Set property "syn_keep = true" for signal <RO_PATH_INV<4>>.
+    Set property "KEEP = TRUE" for signal <RO_PATH_INV<3>>.
+    Set property "syn_keep = true" for signal <RO_PATH_INV<3>>.
+    Set property "KEEP = TRUE" for signal <RO_PATH_INV<2>>.
+    Set property "syn_keep = true" for signal <RO_PATH_INV<2>>.
+    Set property "KEEP = TRUE" for signal <RO_PATH_INV<1>>.
+    Set property "syn_keep = true" for signal <RO_PATH_INV<1>>.
+    Set property "KEEP = TRUE" for signal <RO_PATH_INV<0>>.
+    Set property "syn_keep = true" for signal <RO_PATH_INV<0>>.
+    Summary:
+	no macro.
+Unit <RO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 17-bit adder                                          : 1
+ 32-bit adder                                          : 2
+# Registers                                            : 1
+ 17-bit register                                       : 1
+# Latches                                              : 65
+ 1-bit latch                                           : 65
+# Comparators                                          : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 6
+ 2-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <freq_counter>.
+The following registers are absorbed into counter <slow_clk>: 1 register on signal <slow_clk>.
+Unit <freq_counter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 1
+ 17-bit up counter                                     : 1
+# Comparators                                          : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 6
+ 2-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <OSC_sel>: instances <sel1>, <sel2> of unit <puf_design> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <puf_design>: instances <RO1>, <RO2> of unit <RO> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <puf_design>: instances <RO1>, <RO3> of unit <RO> are equivalent, second instance is removed
+WARNING:Xst:2170 - Unit freq_counter : the following signal(s) form a combinatorial loop: osc_out<0>, counter/sel1/RO1/RO_PATH_INV<1>, counter/sel1/RO1/RO_PATH_INV<4>, counter/sel1/RO1/RO_PATH_INV<2>, sel<0>_mmx_out, counter/sel1/RO1/RO_PATH_INV<0>, counter/sel1/RO1/n0004, counter/sel1/RO1/RO_PATH_INV<3>.
+
+Optimizing unit <freq_counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block freq_counter, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : freq_counter.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 295
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 82
+#      LUT2                        : 1
+#      LUT4                        : 31
+#      LUT5                        : 1
+#      MUXCY                       : 93
+#      VCC                         : 1
+#      XORCY                       : 81
+# FlipFlops/Latches                : 82
+#      FD                          : 17
+#      LD_1                        : 1
+#      LDCE_1                      : 64
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 4
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              81  out of  126800     0%  
+ Number of Slice LUTs:                  119  out of  63400     0%  
+    Number used as Logic:               119  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    119
+   Number with an unused Flip Flop:      38  out of    119    31%  
+   Number with an unused LUT:             0  out of    119     0%  
+   Number of fully used LUT-FF pairs:    81  out of    119    68%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    210     2%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+osc_out<0>(osc_out<0>1:O)          | BUFG(*)(counter1_30)   | 64    |
+slow_clk_16                        | NONE(compared_value)   | 1     |
+clk                                | BUFGP                  | 17    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.060ns (Maximum Frequency: 326.744MHz)
+   Minimum input arrival time before clock: 3.900ns
+   Maximum output required time after clock: 1.030ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'osc_out<0>'
+  Clock period: 3.060ns (frequency: 326.744MHz)
+  Total number of paths / destination ports: 1056 / 64
+-------------------------------------------------------------------------
+Delay:               3.060ns (Levels of Logic = 33)
+  Source:            counter1_0 (LATCH)
+  Destination:       counter1_31 (LATCH)
+  Source Clock:      osc_out<0> rising
+  Destination Clock: osc_out<0> rising
+
+  Data Path: counter1_0 to counter1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE_1:G->Q           3   0.631   0.413  counter1_0 (counter1_0)
+     INV:I->O              1   0.146   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_lut<0>_INV_0 (Madd_counter1[31]_GND_5_o_add_3_OUT_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<0> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<1> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<2> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<3> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<4> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<5> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<6> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<7> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<8> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<9> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<10> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<11> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<12> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<13> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<14> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<15> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<16> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<17> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<18> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<19> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<20> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<21> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<22> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<23> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<24> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<25> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<26> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<27> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<28> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<29> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_cy<30> (Madd_counter1[31]_GND_5_o_add_3_OUT_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  Madd_counter1[31]_GND_5_o_add_3_OUT_xor<31> (counter1[31]_GND_5_o_add_3_OUT<31>)
+     LDCE_1:D                  0.011          counter1_31
+    ----------------------------------------
+    Total                      3.060ns (2.647ns logic, 0.413ns route)
+                                       (86.5% logic, 13.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.474ns (frequency: 404.245MHz)
+  Total number of paths / destination ports: 153 / 17
+-------------------------------------------------------------------------
+Delay:               2.474ns (Levels of Logic = 18)
+  Source:            slow_clk_0 (FF)
+  Destination:       slow_clk_16 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: slow_clk_0 to slow_clk_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.478   0.399  slow_clk_0 (slow_clk_0)
+     INV:I->O              1   0.146   0.000  Mcount_slow_clk_lut<0>_INV_0 (Mcount_slow_clk_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  Mcount_slow_clk_cy<0> (Mcount_slow_clk_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<1> (Mcount_slow_clk_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<2> (Mcount_slow_clk_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<3> (Mcount_slow_clk_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<4> (Mcount_slow_clk_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<5> (Mcount_slow_clk_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<6> (Mcount_slow_clk_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<7> (Mcount_slow_clk_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<8> (Mcount_slow_clk_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<9> (Mcount_slow_clk_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<10> (Mcount_slow_clk_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<11> (Mcount_slow_clk_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<12> (Mcount_slow_clk_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<13> (Mcount_slow_clk_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_slow_clk_cy<14> (Mcount_slow_clk_cy<14>)
+     MUXCY:CI->O           0   0.029   0.000  Mcount_slow_clk_cy<15> (Mcount_slow_clk_cy<15>)
+     XORCY:CI->O           1   0.510   0.000  Mcount_slow_clk_xor<16> (Result<16>)
+     FD:D                      0.030          slow_clk_16
+    ----------------------------------------
+    Total                      2.474ns (2.075ns logic, 0.399ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'osc_out<0>'
+  Total number of paths / destination ports: 256 / 64
+-------------------------------------------------------------------------
+Offset:              3.900ns (Levels of Logic = 6)
+  Source:            enable (PAD)
+  Destination:       counter1_30 (LATCH)
+  Destination Clock: osc_out<0> rising
+
+  Data Path: enable to counter1_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.536  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            1   0.124   0.421  counter/sel1/RO1/RO_PATH_INV<0>1 (counter/sel1/RO1/RO_PATH_INV<0>)
+     LUT1:I0->O            1   0.124   0.421  counter/sel1/RO1/RO_PATH_INV<1>1 (counter/sel1/RO1/RO_PATH_INV<1>)
+     LUT1:I0->O            1   0.124   0.421  counter/sel1/RO1/RO_PATH_INV<2>1 (counter/sel1/RO1/RO_PATH_INV<2>)
+     LUT1:I0->O            2   0.124   0.782  counter/sel1/RO1/RO_PATH_INV<3>1 (counter/sel1/RO1/RO_PATH_INV<3>)
+     LUT4:I0->O           64   0.124   0.559  osc_out<0>1 (osc_out<0>)
+     LDCE_1:GE                 0.139          counter1_30
+    ----------------------------------------
+    Total                      3.900ns (0.760ns logic, 3.140ns route)
+                                       (19.5% logic, 80.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'slow_clk_16'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.030ns (Levels of Logic = 1)
+  Source:            compared_value (LATCH)
+  Destination:       compared_value (PAD)
+  Source Clock:      slow_clk_16 rising
+
+  Data Path: compared_value to compared_value
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.631   0.399  compared_value (compared_value_OBUF)
+     OBUF:I->O                 0.000          compared_value_OBUF (compared_value)
+    ----------------------------------------
+    Total                      1.030ns (0.631ns logic, 0.399ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.474|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock osc_out<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.090|         |         |         |
+osc_out<0>     |    3.060|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock slow_clk_16
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+osc_out<0>     |    3.287|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.76 secs
+ 
+--> 
+
+Total memory usage is 409624 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   80 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

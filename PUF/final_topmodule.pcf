@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Apr 24 19:58:54 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sel<0>" LOCATE = SITE "L16" LEVEL 1;
+COMP "sel<1>" LOCATE = SITE "M13" LEVEL 1;
+COMP "sel<2>" LOCATE = SITE "R15" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "enable" LOCATE = SITE "J15" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "bit4/slow_clk_0" BEL "bit4/slow_clk_1" BEL
+        "bit4/slow_clk_2" BEL "bit4/slow_clk_3" BEL "bit4/slow_clk_4" BEL
+        "bit4/slow_clk_5" BEL "bit4/slow_clk_6" BEL "bit4/slow_clk_7" BEL
+        "bit4/slow_clk_8" BEL "bit4/slow_clk_9" BEL "bit4/slow_clk_10" BEL
+        "bit4/slow_clk_11" BEL "bit4/slow_clk_12" BEL "bit4/slow_clk_13" BEL
+        "bit4/slow_clk_14" BEL "bit4/slow_clk_15" BEL "bit4/slow_clk_16" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,5 @@
+vhdl work "ROwithPUF.vhd"
+vhdl work "puf_design.vhd"
+vhdl work "OSC_sel.vhd"
+vhdl work "freq_counter.vhd"
+vhdl work "final_topmodule.vhd"
