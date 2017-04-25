@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Manasa Kiran/Documents/GitHub/RO_PUF/PUF/RO_isim_beh.exe" -prj "C:/Users/Manasa Kiran/Documents/GitHub/RO_PUF/PUF/RO_beh.prj" "work.RO" 

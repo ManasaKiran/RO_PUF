@@ -1,0 +1,29 @@
+Command line:
+   freq_counter_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58672
+
+Tue Apr 25 17:25:36 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 842.203 Meg
+
+ Total Signals          : 24
+ Total Nets             : 113
+ Total Signal Drivers   : 25
+ Total Blocks           : 21
+ Total Primitive Blocks : 15
+ Total Processes        : 26
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 506
+Total Line Count : 34
+
+ Total Simulation Time: 0.65625 sec
+
+ Current Memory Usage: 684.917 Meg
+
+Tue Apr 25 17:30:08 2017
+

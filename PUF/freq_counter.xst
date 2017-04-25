@@ -1,9 +1,6 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn freq_counter.prj
--ofn freq_counter
--ofmt NGC
+set -tmpdir "C:/Users/Manasa Kiran/Documents/GitHub/RO_PUF/PUF/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Manasa Kiran/Documents/GitHub/RO_PUF/PUF/xst"
+run -compileonly yes
 -p xc7a100t-1-csg324
 -top freq_counter
 -opt_mode Speed
@@ -50,3 +47,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn freq_counter.prj

@@ -1,0 +1,10 @@
+Command line:
+   OSC_sel_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58687
+
+Tue Apr 25 17:30:31 2017
+
+
+ Elaboration Time: 0.046875 sec

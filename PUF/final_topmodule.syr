@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -87,7 +87,7 @@ Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
-Read Cores                         : YES
+Read Cores                         : NO
 Write Timing Constraints           : NO
 Cross Clock Analysis               : NO
 Hierarchy Separator                : /
@@ -134,17 +134,8 @@ Elaborating entity <OSC_sel> (architecture <Behavioral>) from library <work>.
 Elaborating entity <puf_design> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <RO> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 51: osc_out1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 52: osc_out2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 55: osc_out1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 56: osc_out2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 59: osc_out1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd" Line 60: osc_out2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 64: osc_out should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 65: counter1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 67: osc_out should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 68: counter2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 71: counter1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 72: counter1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\final_topmodule.vhd" Line 57: comp should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -158,87 +149,24 @@ Unit <final_topmodule> synthesized.
 
 Synthesizing Unit <freq_counter>.
     Related source file is "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd".
-    Found 17-bit register for signal <slow_clk>.
-    Found 17-bit adder for signal <slow_clk[16]_GND_6_o_add_0_OUT> created at line 58.
-    Found 32-bit adder for signal <counter1[31]_GND_6_o_add_3_OUT> created at line 65.
-    Found 32-bit adder for signal <counter2[31]_GND_6_o_add_6_OUT> created at line 68.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <counter2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <comparator>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator lessequal for signal <counter2[31]_counter1[31]_LessThan_9_o> created at line 71
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <counter2>.
+    Found 32-bit register for signal <counter1>.
+    Found 32-bit adder for signal <counter1[31]_GND_6_o_add_0_OUT> created at line 59.
+    Found 32-bit adder for signal <counter2[31]_GND_6_o_add_2_OUT> created at line 66.
+    Found 32-bit comparator lessequal for signal <counter2[31]_counter1[31]_LessThan_5_o> created at line 72
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred  17 D-type flip-flop(s).
-	inferred  65 Latch(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <freq_counter> synthesized.
 
 Synthesizing Unit <OSC_sel>.
     Related source file is "C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\OSC_sel.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <osc_out<0>> created at line 48.
+    Found 1-bit 4-to-1 multiplexer for signal <osc_out<1>> created at line 55.
     Summary:
-	inferred   6 Multiplexer(s).
+	inferred   2 Multiplexer(s).
 Unit <OSC_sel> synthesized.
 
 Synthesizing Unit <puf_design>.
@@ -268,17 +196,14 @@ Unit <RO> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 15
- 17-bit adder                                          : 5
+# Adders/Subtractors                                   : 10
  32-bit adder                                          : 10
-# Registers                                            : 5
- 17-bit register                                       : 5
-# Latches                                              : 325
- 1-bit latch                                           : 325
+# Registers                                            : 10
+ 32-bit register                                       : 10
 # Comparators                                          : 5
  32-bit comparator lessequal                           : 5
-# Multiplexers                                         : 30
- 2-bit 2-to-1 multiplexer                              : 30
+# Multiplexers                                         : 10
+ 1-bit 4-to-1 multiplexer                              : 10
 
 =========================================================================
 
@@ -288,36 +213,33 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <freq_counter>.
-The following registers are absorbed into counter <slow_clk>: 1 register on signal <slow_clk>.
+The following registers are absorbed into counter <counter2>: 1 register on signal <counter2>.
+The following registers are absorbed into counter <counter1>: 1 register on signal <counter1>.
 Unit <freq_counter> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 10
- 32-bit adder                                          : 10
-# Counters                                             : 5
- 17-bit up counter                                     : 5
+# Counters                                             : 10
+ 32-bit up counter                                     : 10
 # Comparators                                          : 5
  32-bit comparator lessequal                           : 5
-# Multiplexers                                         : 30
- 2-bit 2-to-1 multiplexer                              : 30
+# Multiplexers                                         : 10
+ 1-bit 4-to-1 multiplexer                              : 10
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1989 - Unit <OSC_sel>: instances <sel1>, <sel2> of unit <puf_design> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <puf_design>: instances <RO1>, <RO2> of unit <RO> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <puf_design>: instances <RO1>, <RO3> of unit <RO> are equivalent, second instance is removed
-INFO:Xst:2146 - In block <final_topmodule>, Counter <bit4/slow_clk> <bit3/slow_clk> <bit2/slow_clk> <bit1/slow_clk> <bit0/slow_clk> are equivalent, XST will keep only <bit4/slow_clk>.
-WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit4/counter/sel1/RO1/RO_PATH_INV<0>, bit4/counter/sel1/RO1/RO_PATH_INV<2>, bit4/counter/sel1/RO1/RO_PATH_INV<4>, bit4/osc_out<0>, bit4/counter/sel1/RO1/RO_PATH_INV<3>, bit4/counter/sel1/RO1/RO_PATH_INV<1>, sel<0>_mmx_out4, bit4/counter/sel1/RO1/n0004.
-WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit3/osc_out<0>, bit3/counter/sel1/RO1/RO_PATH_INV<1>, bit3/counter/sel1/RO1/RO_PATH_INV<4>, bit3/counter/sel1/RO1/n0004, bit3/counter/sel1/RO1/RO_PATH_INV<2>, bit3/counter/sel1/RO1/RO_PATH_INV<0>, sel<0>_mmx_out3, bit3/counter/sel1/RO1/RO_PATH_INV<3>.
-WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit2/counter/sel1/RO1/RO_PATH_INV<0>, bit2/osc_out<0>, bit2/counter/sel1/RO1/RO_PATH_INV<4>, bit2/counter/sel1/RO1/RO_PATH_INV<2>, sel<0>_mmx_out2, bit2/counter/sel1/RO1/n0004, bit2/counter/sel1/RO1/RO_PATH_INV<3>, bit2/counter/sel1/RO1/RO_PATH_INV<1>.
-WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit1/counter/sel1/RO1/RO_PATH_INV<2>, bit1/counter/sel1/RO1/RO_PATH_INV<1>, bit1/counter/sel1/RO1/RO_PATH_INV<0>, bit1/osc_out<0>, sel<0>_mmx_out1, bit1/counter/sel1/RO1/RO_PATH_INV<4>, bit1/counter/sel1/RO1/RO_PATH_INV<3>, bit1/counter/sel1/RO1/n0004.
-WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit0/osc_out<0>, bit0/counter/sel1/RO1/RO_PATH_INV<2>, bit0/counter/sel1/RO1/RO_PATH_INV<1>, bit0/counter/sel1/RO1/RO_PATH_INV<3>, bit0/counter/sel1/RO1/RO_PATH_INV<0>, bit0/counter/sel1/RO1/n0004, bit0/counter/sel1/RO1/RO_PATH_INV<4>, sel<0>_mmx_out.
+WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit4/counter/sel1/RO1/RO_PATH_INV<3>, bit4/counter/sel1/RO1/RO_PATH_INV<4>, bit4/counter/sel1/RO1/RO_PATH_INV<1>, bit4/counter/sel1/RO1/RO_PATH_INV<2>, bit4/counter/sel1/RO1/RO_PATH_INV<0>, bit4/counter/sel1/RO1/n0004, bit4/osc_out<0>.
+WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit3/counter/sel1/RO1/RO_PATH_INV<0>, bit3/osc_out<0>, bit3/counter/sel1/RO1/RO_PATH_INV<2>, bit3/counter/sel1/RO1/RO_PATH_INV<4>, bit3/counter/sel1/RO1/n0004, bit3/counter/sel1/RO1/RO_PATH_INV<3>, bit3/counter/sel1/RO1/RO_PATH_INV<1>.
+WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit2/counter/sel1/RO1/n0004, bit2/counter/sel1/RO1/RO_PATH_INV<3>, bit2/counter/sel1/RO1/RO_PATH_INV<2>, bit2/counter/sel1/RO1/RO_PATH_INV<1>, bit2/osc_out<0>, bit2/counter/sel1/RO1/RO_PATH_INV<4>, bit2/counter/sel1/RO1/RO_PATH_INV<0>.
+WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit1/osc_out<0>, bit1/counter/sel1/RO1/RO_PATH_INV<3>, bit1/counter/sel1/RO1/n0004, bit1/counter/sel1/RO1/RO_PATH_INV<0>, bit1/counter/sel1/RO1/RO_PATH_INV<4>, bit1/counter/sel1/RO1/RO_PATH_INV<2>, bit1/counter/sel1/RO1/RO_PATH_INV<1>.
+WARNING:Xst:2170 - Unit final_topmodule : the following signal(s) form a combinatorial loop: bit0/counter/sel1/RO1/RO_PATH_INV<2>, bit0/counter/sel1/RO1/RO_PATH_INV<0>, bit0/counter/sel1/RO1/n0004, bit0/counter/sel1/RO1/RO_PATH_INV<1>, bit0/counter/sel1/RO1/RO_PATH_INV<3>, bit0/counter/sel1/RO1/RO_PATH_INV<4>, bit0/osc_out<0>.
 
 Optimizing unit <final_topmodule> ...
 
@@ -331,8 +253,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 17
- Flip-Flops                                            : 17
+# Registers                                            : 320
+ Flip-Flops                                            : 320
 
 =========================================================================
 
@@ -355,25 +277,23 @@ Top Level Output File Name         : final_topmodule.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1263
+# BELS                             : 1217
 #      GND                         : 1
-#      INV                         : 12
-#      LUT1                        : 346
+#      INV                         : 10
+#      LUT1                        : 330
 #      LUT2                        : 5
-#      LUT4                        : 155
+#      LUT3                        : 10
+#      LUT4                        : 150
 #      LUT5                        : 5
-#      MUXCY                       : 401
+#      MUXCY                       : 385
 #      VCC                         : 1
-#      XORCY                       : 337
-# FlipFlops/Latches                : 342
-#      FD                          : 17
-#      LD_1                        : 5
-#      LDCE_1                      : 320
-# Clock Buffers                    : 6
-#      BUFG                        : 5
-#      BUFGP                       : 1
-# IO Buffers                       : 9
-#      IBUF                        : 4
+#      XORCY                       : 320
+# FlipFlops/Latches                : 320
+#      FD                          : 320
+# Clock Buffers                    : 10
+#      BUFG                        : 10
+# IO Buffers                       : 10
+#      IBUF                        : 5
 #      OBUF                        : 5
 
 Device utilization summary:
@@ -383,24 +303,23 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             337  out of  126800     0%  
- Number of Slice LUTs:                  523  out of  63400     0%  
-    Number used as Logic:               523  out of  63400     0%  
+ Number of Slice Registers:             320  out of  126800     0%  
+ Number of Slice LUTs:                  510  out of  63400     0%  
+    Number used as Logic:               510  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    523
-   Number with an unused Flip Flop:     186  out of    523    35%  
-   Number with an unused LUT:             0  out of    523     0%  
-   Number of fully used LUT-FF pairs:   337  out of    523    64%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:    510
+   Number with an unused Flip Flop:     190  out of    510    37%  
+   Number with an unused LUT:             0  out of    510     0%  
+   Number of fully used LUT-FF pairs:   320  out of    510    62%  
+   Number of unique control sets:        10
 
 IO Utilization: 
- Number of IOs:                          10
+ Number of IOs:                          11
  Number of bonded IOBs:                  10  out of    210     4%  
-    IOB Flip Flops/Latches:               5
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
+ Number of BUFG/BUFGCTRLs:               10  out of     32    31%  
 
 ---------------------------
 Partition Resource Summary:
@@ -420,21 +339,23 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+--------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)    | Load  |
------------------------------------+--------------------------+-------+
-bit4/slow_clk_16                   | NONE(bit4/comparator)    | 5     |
-bit4/osc_out<0>(bit4/osc_out<0>1:O)| BUFG(*)(bit4/counter2_31)| 64    |
-bit3/osc_out<0>(bit3/osc_out<0>1:O)| BUFG(*)(bit3/counter2_31)| 64    |
-bit2/osc_out<0>(bit2/osc_out<0>1:O)| BUFG(*)(bit2/counter2_31)| 64    |
-bit1/osc_out<0>(bit1/osc_out<0>1:O)| BUFG(*)(bit1/counter2_31)| 64    |
-bit0/osc_out<0>(bit0/osc_out<0>1:O)| BUFG(*)(bit0/counter2_31)| 64    |
-clk                                | BUFGP                    | 17    |
------------------------------------+--------------------------+-------+
-(*) These 5 clock signal(s) are generated by combinatorial logic,
+-------------------------------------------------+-------------------------+-------+
+Clock Signal                                     | Clock buffer(FF name)   | Load  |
+-------------------------------------------------+-------------------------+-------+
+bit4/osc_out<0>(bit4/counter/Mmux_osc_out<0>11:O)| BUFG(*)(bit4/counter1_0)| 32    |
+bit4/osc_out<1>(bit4/counter/Mmux_osc_out<1>11:O)| BUFG(*)(bit4/counter2_0)| 32    |
+bit3/osc_out<0>(bit3/counter/Mmux_osc_out<0>11:O)| BUFG(*)(bit3/counter1_0)| 32    |
+bit2/osc_out<0>(bit2/counter/Mmux_osc_out<0>11:O)| BUFG(*)(bit2/counter1_0)| 32    |
+bit3/osc_out<1>(bit3/counter/Mmux_osc_out<1>11:O)| BUFG(*)(bit3/counter2_0)| 32    |
+bit1/osc_out<0>(bit1/counter/Mmux_osc_out<0>11:O)| BUFG(*)(bit1/counter1_0)| 32    |
+bit2/osc_out<1>(bit2/counter/Mmux_osc_out<1>11:O)| BUFG(*)(bit2/counter2_0)| 32    |
+bit0/osc_out<0>(bit0/counter/Mmux_osc_out<0>11:O)| BUFG(*)(bit0/counter1_0)| 32    |
+bit1/osc_out<1>(bit1/counter/Mmux_osc_out<1>11:O)| BUFG(*)(bit1/counter2_0)| 32    |
+bit0/osc_out<1>(bit0/counter/Mmux_osc_out<1>11:O)| BUFG(*)(bit0/counter2_0)| 32    |
+-------------------------------------------------+-------------------------+-------+
+(*) These 10 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -444,9 +365,9 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.060ns (Maximum Frequency: 326.744MHz)
-   Minimum input arrival time before clock: 3.927ns
-   Maximum output required time after clock: 1.030ns
+   Minimum period: 2.926ns (Maximum Frequency: 341.705MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 3.637ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -455,451 +376,903 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'bit4/osc_out<0>'
-  Clock period: 3.060ns (frequency: 326.744MHz)
-  Total number of paths / destination ports: 1056 / 64
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
 -------------------------------------------------------------------------
-Delay:               3.060ns (Levels of Logic = 33)
-  Source:            bit4/counter2_0 (LATCH)
-  Destination:       bit4/counter2_31 (LATCH)
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit4/counter1_0 (FF)
+  Destination:       bit4/counter1_31 (FF)
   Source Clock:      bit4/osc_out<0> rising
   Destination Clock: bit4/osc_out<0> rising
+
+  Data Path: bit4/counter1_0 to bit4/counter1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.413  bit4/counter1_0 (bit4/counter1_0)
+     INV:I->O              1   0.146   0.000  bit4/Mcount_counter1_lut<0>_INV_0 (bit4/Mcount_counter1_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit4/Mcount_counter1_cy<0> (bit4/Mcount_counter1_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<1> (bit4/Mcount_counter1_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<2> (bit4/Mcount_counter1_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<3> (bit4/Mcount_counter1_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<4> (bit4/Mcount_counter1_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<5> (bit4/Mcount_counter1_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<6> (bit4/Mcount_counter1_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<7> (bit4/Mcount_counter1_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<8> (bit4/Mcount_counter1_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<9> (bit4/Mcount_counter1_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<10> (bit4/Mcount_counter1_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<11> (bit4/Mcount_counter1_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<12> (bit4/Mcount_counter1_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<13> (bit4/Mcount_counter1_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<14> (bit4/Mcount_counter1_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<15> (bit4/Mcount_counter1_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<16> (bit4/Mcount_counter1_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<17> (bit4/Mcount_counter1_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<18> (bit4/Mcount_counter1_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<19> (bit4/Mcount_counter1_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<20> (bit4/Mcount_counter1_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<21> (bit4/Mcount_counter1_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<22> (bit4/Mcount_counter1_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<23> (bit4/Mcount_counter1_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<24> (bit4/Mcount_counter1_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<25> (bit4/Mcount_counter1_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<26> (bit4/Mcount_counter1_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<27> (bit4/Mcount_counter1_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<28> (bit4/Mcount_counter1_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter1_cy<29> (bit4/Mcount_counter1_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit4/Mcount_counter1_cy<30> (bit4/Mcount_counter1_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit4/Mcount_counter1_xor<31> (Result<31>)
+     FD:D                      0.030          bit4/counter1_31
+    ----------------------------------------
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bit4/osc_out<1>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit4/counter2_0 (FF)
+  Destination:       bit4/counter2_31 (FF)
+  Source Clock:      bit4/osc_out<1> rising
+  Destination Clock: bit4/osc_out<1> rising
 
   Data Path: bit4/counter2_0 to bit4/counter2_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCE_1:G->Q           3   0.631   0.413  bit4/counter2_0 (bit4/counter2_0)
-     INV:I->O              1   0.146   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>_INV_0 (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29>)
-     MUXCY:CI->O           0   0.029   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30> (bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30>)
-     XORCY:CI->O           1   0.510   0.000  bit4/Madd_counter2[31]_GND_6_o_add_6_OUT_xor<31> (bit4/counter2[31]_GND_6_o_add_6_OUT<31>)
-     LDCE_1:D                  0.011          bit4/counter2_31
+     FD:C->Q               3   0.478   0.413  bit4/counter2_0 (bit4/counter2_0)
+     INV:I->O              1   0.146   0.000  bit4/Mcount_counter2_lut<0>_INV_0 (bit4/Mcount_counter2_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit4/Mcount_counter2_cy<0> (bit4/Mcount_counter2_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<1> (bit4/Mcount_counter2_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<2> (bit4/Mcount_counter2_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<3> (bit4/Mcount_counter2_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<4> (bit4/Mcount_counter2_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<5> (bit4/Mcount_counter2_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<6> (bit4/Mcount_counter2_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<7> (bit4/Mcount_counter2_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<8> (bit4/Mcount_counter2_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<9> (bit4/Mcount_counter2_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<10> (bit4/Mcount_counter2_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<11> (bit4/Mcount_counter2_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<12> (bit4/Mcount_counter2_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<13> (bit4/Mcount_counter2_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<14> (bit4/Mcount_counter2_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<15> (bit4/Mcount_counter2_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<16> (bit4/Mcount_counter2_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<17> (bit4/Mcount_counter2_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<18> (bit4/Mcount_counter2_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<19> (bit4/Mcount_counter2_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<20> (bit4/Mcount_counter2_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<21> (bit4/Mcount_counter2_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<22> (bit4/Mcount_counter2_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<23> (bit4/Mcount_counter2_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<24> (bit4/Mcount_counter2_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<25> (bit4/Mcount_counter2_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<26> (bit4/Mcount_counter2_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<27> (bit4/Mcount_counter2_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<28> (bit4/Mcount_counter2_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_counter2_cy<29> (bit4/Mcount_counter2_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit4/Mcount_counter2_cy<30> (bit4/Mcount_counter2_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit4/Mcount_counter2_xor<31> (Result<31>1)
+     FD:D                      0.030          bit4/counter2_31
     ----------------------------------------
-    Total                      3.060ns (2.647ns logic, 0.413ns route)
-                                       (86.5% logic, 13.5% route)
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'bit3/osc_out<0>'
-  Clock period: 3.060ns (frequency: 326.744MHz)
-  Total number of paths / destination ports: 1056 / 64
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
 -------------------------------------------------------------------------
-Delay:               3.060ns (Levels of Logic = 33)
-  Source:            bit3/counter2_0 (LATCH)
-  Destination:       bit3/counter2_31 (LATCH)
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit3/counter1_0 (FF)
+  Destination:       bit3/counter1_31 (FF)
   Source Clock:      bit3/osc_out<0> rising
   Destination Clock: bit3/osc_out<0> rising
+
+  Data Path: bit3/counter1_0 to bit3/counter1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.413  bit3/counter1_0 (bit3/counter1_0)
+     INV:I->O              1   0.146   0.000  bit3/Mcount_counter1_lut<0>_INV_0 (bit3/Mcount_counter1_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit3/Mcount_counter1_cy<0> (bit3/Mcount_counter1_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<1> (bit3/Mcount_counter1_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<2> (bit3/Mcount_counter1_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<3> (bit3/Mcount_counter1_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<4> (bit3/Mcount_counter1_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<5> (bit3/Mcount_counter1_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<6> (bit3/Mcount_counter1_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<7> (bit3/Mcount_counter1_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<8> (bit3/Mcount_counter1_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<9> (bit3/Mcount_counter1_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<10> (bit3/Mcount_counter1_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<11> (bit3/Mcount_counter1_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<12> (bit3/Mcount_counter1_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<13> (bit3/Mcount_counter1_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<14> (bit3/Mcount_counter1_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<15> (bit3/Mcount_counter1_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<16> (bit3/Mcount_counter1_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<17> (bit3/Mcount_counter1_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<18> (bit3/Mcount_counter1_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<19> (bit3/Mcount_counter1_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<20> (bit3/Mcount_counter1_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<21> (bit3/Mcount_counter1_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<22> (bit3/Mcount_counter1_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<23> (bit3/Mcount_counter1_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<24> (bit3/Mcount_counter1_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<25> (bit3/Mcount_counter1_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<26> (bit3/Mcount_counter1_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<27> (bit3/Mcount_counter1_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<28> (bit3/Mcount_counter1_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter1_cy<29> (bit3/Mcount_counter1_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit3/Mcount_counter1_cy<30> (bit3/Mcount_counter1_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit3/Mcount_counter1_xor<31> (Result<31>2)
+     FD:D                      0.030          bit3/counter1_31
+    ----------------------------------------
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bit2/osc_out<0>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit2/counter1_0 (FF)
+  Destination:       bit2/counter1_31 (FF)
+  Source Clock:      bit2/osc_out<0> rising
+  Destination Clock: bit2/osc_out<0> rising
+
+  Data Path: bit2/counter1_0 to bit2/counter1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.413  bit2/counter1_0 (bit2/counter1_0)
+     INV:I->O              1   0.146   0.000  bit2/Mcount_counter1_lut<0>_INV_0 (bit2/Mcount_counter1_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit2/Mcount_counter1_cy<0> (bit2/Mcount_counter1_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<1> (bit2/Mcount_counter1_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<2> (bit2/Mcount_counter1_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<3> (bit2/Mcount_counter1_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<4> (bit2/Mcount_counter1_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<5> (bit2/Mcount_counter1_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<6> (bit2/Mcount_counter1_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<7> (bit2/Mcount_counter1_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<8> (bit2/Mcount_counter1_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<9> (bit2/Mcount_counter1_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<10> (bit2/Mcount_counter1_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<11> (bit2/Mcount_counter1_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<12> (bit2/Mcount_counter1_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<13> (bit2/Mcount_counter1_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<14> (bit2/Mcount_counter1_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<15> (bit2/Mcount_counter1_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<16> (bit2/Mcount_counter1_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<17> (bit2/Mcount_counter1_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<18> (bit2/Mcount_counter1_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<19> (bit2/Mcount_counter1_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<20> (bit2/Mcount_counter1_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<21> (bit2/Mcount_counter1_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<22> (bit2/Mcount_counter1_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<23> (bit2/Mcount_counter1_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<24> (bit2/Mcount_counter1_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<25> (bit2/Mcount_counter1_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<26> (bit2/Mcount_counter1_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<27> (bit2/Mcount_counter1_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<28> (bit2/Mcount_counter1_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter1_cy<29> (bit2/Mcount_counter1_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit2/Mcount_counter1_cy<30> (bit2/Mcount_counter1_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit2/Mcount_counter1_xor<31> (Result<31>3)
+     FD:D                      0.030          bit2/counter1_31
+    ----------------------------------------
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bit3/osc_out<1>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit3/counter2_0 (FF)
+  Destination:       bit3/counter2_31 (FF)
+  Source Clock:      bit3/osc_out<1> rising
+  Destination Clock: bit3/osc_out<1> rising
 
   Data Path: bit3/counter2_0 to bit3/counter2_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCE_1:G->Q           3   0.631   0.413  bit3/counter2_0 (bit3/counter2_0)
-     INV:I->O              1   0.146   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>_INV_0 (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28>)
-     MUXCY:CI->O           1   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29>)
-     MUXCY:CI->O           0   0.029   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30> (bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30>)
-     XORCY:CI->O           1   0.510   0.000  bit3/Madd_counter2[31]_GND_6_o_add_6_OUT_xor<31> (bit3/counter2[31]_GND_6_o_add_6_OUT<31>)
-     LDCE_1:D                  0.011          bit3/counter2_31
+     FD:C->Q               3   0.478   0.413  bit3/counter2_0 (bit3/counter2_0)
+     INV:I->O              1   0.146   0.000  bit3/Mcount_counter2_lut<0>_INV_0 (bit3/Mcount_counter2_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit3/Mcount_counter2_cy<0> (bit3/Mcount_counter2_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<1> (bit3/Mcount_counter2_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<2> (bit3/Mcount_counter2_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<3> (bit3/Mcount_counter2_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<4> (bit3/Mcount_counter2_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<5> (bit3/Mcount_counter2_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<6> (bit3/Mcount_counter2_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<7> (bit3/Mcount_counter2_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<8> (bit3/Mcount_counter2_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<9> (bit3/Mcount_counter2_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<10> (bit3/Mcount_counter2_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<11> (bit3/Mcount_counter2_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<12> (bit3/Mcount_counter2_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<13> (bit3/Mcount_counter2_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<14> (bit3/Mcount_counter2_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<15> (bit3/Mcount_counter2_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<16> (bit3/Mcount_counter2_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<17> (bit3/Mcount_counter2_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<18> (bit3/Mcount_counter2_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<19> (bit3/Mcount_counter2_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<20> (bit3/Mcount_counter2_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<21> (bit3/Mcount_counter2_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<22> (bit3/Mcount_counter2_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<23> (bit3/Mcount_counter2_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<24> (bit3/Mcount_counter2_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<25> (bit3/Mcount_counter2_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<26> (bit3/Mcount_counter2_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<27> (bit3/Mcount_counter2_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<28> (bit3/Mcount_counter2_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcount_counter2_cy<29> (bit3/Mcount_counter2_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit3/Mcount_counter2_cy<30> (bit3/Mcount_counter2_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit3/Mcount_counter2_xor<31> (Result<31>4)
+     FD:D                      0.030          bit3/counter2_31
     ----------------------------------------
-    Total                      3.060ns (2.647ns logic, 0.413ns route)
-                                       (86.5% logic, 13.5% route)
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'bit2/osc_out<0>'
-  Clock period: 3.060ns (frequency: 326.744MHz)
-  Total number of paths / destination ports: 1056 / 64
+Timing constraint: Default period analysis for Clock 'bit1/osc_out<0>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
 -------------------------------------------------------------------------
-Delay:               3.060ns (Levels of Logic = 33)
-  Source:            bit2/counter2_0 (LATCH)
-  Destination:       bit2/counter2_31 (LATCH)
-  Source Clock:      bit2/osc_out<0> rising
-  Destination Clock: bit2/osc_out<0> rising
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit1/counter1_0 (FF)
+  Destination:       bit1/counter1_31 (FF)
+  Source Clock:      bit1/osc_out<0> rising
+  Destination Clock: bit1/osc_out<0> rising
+
+  Data Path: bit1/counter1_0 to bit1/counter1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.413  bit1/counter1_0 (bit1/counter1_0)
+     INV:I->O              1   0.146   0.000  bit1/Mcount_counter1_lut<0>_INV_0 (bit1/Mcount_counter1_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit1/Mcount_counter1_cy<0> (bit1/Mcount_counter1_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<1> (bit1/Mcount_counter1_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<2> (bit1/Mcount_counter1_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<3> (bit1/Mcount_counter1_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<4> (bit1/Mcount_counter1_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<5> (bit1/Mcount_counter1_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<6> (bit1/Mcount_counter1_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<7> (bit1/Mcount_counter1_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<8> (bit1/Mcount_counter1_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<9> (bit1/Mcount_counter1_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<10> (bit1/Mcount_counter1_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<11> (bit1/Mcount_counter1_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<12> (bit1/Mcount_counter1_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<13> (bit1/Mcount_counter1_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<14> (bit1/Mcount_counter1_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<15> (bit1/Mcount_counter1_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<16> (bit1/Mcount_counter1_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<17> (bit1/Mcount_counter1_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<18> (bit1/Mcount_counter1_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<19> (bit1/Mcount_counter1_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<20> (bit1/Mcount_counter1_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<21> (bit1/Mcount_counter1_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<22> (bit1/Mcount_counter1_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<23> (bit1/Mcount_counter1_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<24> (bit1/Mcount_counter1_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<25> (bit1/Mcount_counter1_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<26> (bit1/Mcount_counter1_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<27> (bit1/Mcount_counter1_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<28> (bit1/Mcount_counter1_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter1_cy<29> (bit1/Mcount_counter1_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit1/Mcount_counter1_cy<30> (bit1/Mcount_counter1_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit1/Mcount_counter1_xor<31> (Result<31>5)
+     FD:D                      0.030          bit1/counter1_31
+    ----------------------------------------
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bit2/osc_out<1>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit2/counter2_0 (FF)
+  Destination:       bit2/counter2_31 (FF)
+  Source Clock:      bit2/osc_out<1> rising
+  Destination Clock: bit2/osc_out<1> rising
 
   Data Path: bit2/counter2_0 to bit2/counter2_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCE_1:G->Q           3   0.631   0.413  bit2/counter2_0 (bit2/counter2_0)
-     INV:I->O              1   0.146   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>_INV_0 (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28>)
-     MUXCY:CI->O           1   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29>)
-     MUXCY:CI->O           0   0.029   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30> (bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30>)
-     XORCY:CI->O           1   0.510   0.000  bit2/Madd_counter2[31]_GND_6_o_add_6_OUT_xor<31> (bit2/counter2[31]_GND_6_o_add_6_OUT<31>)
-     LDCE_1:D                  0.011          bit2/counter2_31
+     FD:C->Q               3   0.478   0.413  bit2/counter2_0 (bit2/counter2_0)
+     INV:I->O              1   0.146   0.000  bit2/Mcount_counter2_lut<0>_INV_0 (bit2/Mcount_counter2_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit2/Mcount_counter2_cy<0> (bit2/Mcount_counter2_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<1> (bit2/Mcount_counter2_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<2> (bit2/Mcount_counter2_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<3> (bit2/Mcount_counter2_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<4> (bit2/Mcount_counter2_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<5> (bit2/Mcount_counter2_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<6> (bit2/Mcount_counter2_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<7> (bit2/Mcount_counter2_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<8> (bit2/Mcount_counter2_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<9> (bit2/Mcount_counter2_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<10> (bit2/Mcount_counter2_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<11> (bit2/Mcount_counter2_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<12> (bit2/Mcount_counter2_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<13> (bit2/Mcount_counter2_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<14> (bit2/Mcount_counter2_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<15> (bit2/Mcount_counter2_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<16> (bit2/Mcount_counter2_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<17> (bit2/Mcount_counter2_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<18> (bit2/Mcount_counter2_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<19> (bit2/Mcount_counter2_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<20> (bit2/Mcount_counter2_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<21> (bit2/Mcount_counter2_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<22> (bit2/Mcount_counter2_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<23> (bit2/Mcount_counter2_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<24> (bit2/Mcount_counter2_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<25> (bit2/Mcount_counter2_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<26> (bit2/Mcount_counter2_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<27> (bit2/Mcount_counter2_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<28> (bit2/Mcount_counter2_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcount_counter2_cy<29> (bit2/Mcount_counter2_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit2/Mcount_counter2_cy<30> (bit2/Mcount_counter2_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit2/Mcount_counter2_xor<31> (Result<31>6)
+     FD:D                      0.030          bit2/counter2_31
     ----------------------------------------
-    Total                      3.060ns (2.647ns logic, 0.413ns route)
-                                       (86.5% logic, 13.5% route)
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'bit1/osc_out<0>'
-  Clock period: 3.060ns (frequency: 326.744MHz)
-  Total number of paths / destination ports: 1056 / 64
+Timing constraint: Default period analysis for Clock 'bit0/osc_out<0>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
 -------------------------------------------------------------------------
-Delay:               3.060ns (Levels of Logic = 33)
-  Source:            bit1/counter2_0 (LATCH)
-  Destination:       bit1/counter2_31 (LATCH)
-  Source Clock:      bit1/osc_out<0> rising
-  Destination Clock: bit1/osc_out<0> rising
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit0/counter1_0 (FF)
+  Destination:       bit0/counter1_31 (FF)
+  Source Clock:      bit0/osc_out<0> rising
+  Destination Clock: bit0/osc_out<0> rising
+
+  Data Path: bit0/counter1_0 to bit0/counter1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.413  bit0/counter1_0 (bit0/counter1_0)
+     INV:I->O              1   0.146   0.000  bit0/Mcount_counter1_lut<0>_INV_0 (bit0/Mcount_counter1_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit0/Mcount_counter1_cy<0> (bit0/Mcount_counter1_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<1> (bit0/Mcount_counter1_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<2> (bit0/Mcount_counter1_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<3> (bit0/Mcount_counter1_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<4> (bit0/Mcount_counter1_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<5> (bit0/Mcount_counter1_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<6> (bit0/Mcount_counter1_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<7> (bit0/Mcount_counter1_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<8> (bit0/Mcount_counter1_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<9> (bit0/Mcount_counter1_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<10> (bit0/Mcount_counter1_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<11> (bit0/Mcount_counter1_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<12> (bit0/Mcount_counter1_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<13> (bit0/Mcount_counter1_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<14> (bit0/Mcount_counter1_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<15> (bit0/Mcount_counter1_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<16> (bit0/Mcount_counter1_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<17> (bit0/Mcount_counter1_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<18> (bit0/Mcount_counter1_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<19> (bit0/Mcount_counter1_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<20> (bit0/Mcount_counter1_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<21> (bit0/Mcount_counter1_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<22> (bit0/Mcount_counter1_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<23> (bit0/Mcount_counter1_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<24> (bit0/Mcount_counter1_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<25> (bit0/Mcount_counter1_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<26> (bit0/Mcount_counter1_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<27> (bit0/Mcount_counter1_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<28> (bit0/Mcount_counter1_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter1_cy<29> (bit0/Mcount_counter1_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit0/Mcount_counter1_cy<30> (bit0/Mcount_counter1_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit0/Mcount_counter1_xor<31> (Result<31>7)
+     FD:D                      0.030          bit0/counter1_31
+    ----------------------------------------
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bit1/osc_out<1>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit1/counter2_0 (FF)
+  Destination:       bit1/counter2_31 (FF)
+  Source Clock:      bit1/osc_out<1> rising
+  Destination Clock: bit1/osc_out<1> rising
 
   Data Path: bit1/counter2_0 to bit1/counter2_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCE_1:G->Q           3   0.631   0.413  bit1/counter2_0 (bit1/counter2_0)
-     INV:I->O              1   0.146   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>_INV_0 (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28>)
-     MUXCY:CI->O           1   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29>)
-     MUXCY:CI->O           0   0.029   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30> (bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30>)
-     XORCY:CI->O           1   0.510   0.000  bit1/Madd_counter2[31]_GND_6_o_add_6_OUT_xor<31> (bit1/counter2[31]_GND_6_o_add_6_OUT<31>)
-     LDCE_1:D                  0.011          bit1/counter2_31
+     FD:C->Q               3   0.478   0.413  bit1/counter2_0 (bit1/counter2_0)
+     INV:I->O              1   0.146   0.000  bit1/Mcount_counter2_lut<0>_INV_0 (bit1/Mcount_counter2_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit1/Mcount_counter2_cy<0> (bit1/Mcount_counter2_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<1> (bit1/Mcount_counter2_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<2> (bit1/Mcount_counter2_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<3> (bit1/Mcount_counter2_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<4> (bit1/Mcount_counter2_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<5> (bit1/Mcount_counter2_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<6> (bit1/Mcount_counter2_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<7> (bit1/Mcount_counter2_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<8> (bit1/Mcount_counter2_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<9> (bit1/Mcount_counter2_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<10> (bit1/Mcount_counter2_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<11> (bit1/Mcount_counter2_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<12> (bit1/Mcount_counter2_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<13> (bit1/Mcount_counter2_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<14> (bit1/Mcount_counter2_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<15> (bit1/Mcount_counter2_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<16> (bit1/Mcount_counter2_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<17> (bit1/Mcount_counter2_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<18> (bit1/Mcount_counter2_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<19> (bit1/Mcount_counter2_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<20> (bit1/Mcount_counter2_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<21> (bit1/Mcount_counter2_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<22> (bit1/Mcount_counter2_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<23> (bit1/Mcount_counter2_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<24> (bit1/Mcount_counter2_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<25> (bit1/Mcount_counter2_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<26> (bit1/Mcount_counter2_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<27> (bit1/Mcount_counter2_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<28> (bit1/Mcount_counter2_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcount_counter2_cy<29> (bit1/Mcount_counter2_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit1/Mcount_counter2_cy<30> (bit1/Mcount_counter2_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit1/Mcount_counter2_xor<31> (Result<31>8)
+     FD:D                      0.030          bit1/counter2_31
     ----------------------------------------
-    Total                      3.060ns (2.647ns logic, 0.413ns route)
-                                       (86.5% logic, 13.5% route)
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'bit0/osc_out<0>'
-  Clock period: 3.060ns (frequency: 326.744MHz)
-  Total number of paths / destination ports: 1056 / 64
+Timing constraint: Default period analysis for Clock 'bit0/osc_out<1>'
+  Clock period: 2.926ns (frequency: 341.705MHz)
+  Total number of paths / destination ports: 528 / 32
 -------------------------------------------------------------------------
-Delay:               3.060ns (Levels of Logic = 33)
-  Source:            bit0/counter2_0 (LATCH)
-  Destination:       bit0/counter2_31 (LATCH)
-  Source Clock:      bit0/osc_out<0> rising
-  Destination Clock: bit0/osc_out<0> rising
+Delay:               2.926ns (Levels of Logic = 33)
+  Source:            bit0/counter2_0 (FF)
+  Destination:       bit0/counter2_31 (FF)
+  Source Clock:      bit0/osc_out<1> rising
+  Destination Clock: bit0/osc_out<1> rising
 
   Data Path: bit0/counter2_0 to bit0/counter2_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCE_1:G->Q           3   0.631   0.413  bit0/counter2_0 (bit0/counter2_0)
-     INV:I->O              1   0.146   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>_INV_0 (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<14>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<15>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<16>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<17>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<18>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<19>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<20>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<21>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<22>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<23>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<24>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<25>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<26>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<27>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<28>)
-     MUXCY:CI->O           1   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<29>)
-     MUXCY:CI->O           0   0.029   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30> (bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_cy<30>)
-     XORCY:CI->O           1   0.510   0.000  bit0/Madd_counter2[31]_GND_6_o_add_6_OUT_xor<31> (bit0/counter2[31]_GND_6_o_add_6_OUT<31>)
-     LDCE_1:D                  0.011          bit0/counter2_31
+     FD:C->Q               3   0.478   0.413  bit0/counter2_0 (bit0/counter2_0)
+     INV:I->O              1   0.146   0.000  bit0/Mcount_counter2_lut<0>_INV_0 (bit0/Mcount_counter2_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit0/Mcount_counter2_cy<0> (bit0/Mcount_counter2_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<1> (bit0/Mcount_counter2_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<2> (bit0/Mcount_counter2_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<3> (bit0/Mcount_counter2_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<4> (bit0/Mcount_counter2_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<5> (bit0/Mcount_counter2_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<6> (bit0/Mcount_counter2_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<7> (bit0/Mcount_counter2_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<8> (bit0/Mcount_counter2_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<9> (bit0/Mcount_counter2_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<10> (bit0/Mcount_counter2_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<11> (bit0/Mcount_counter2_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<12> (bit0/Mcount_counter2_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<13> (bit0/Mcount_counter2_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<14> (bit0/Mcount_counter2_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<15> (bit0/Mcount_counter2_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<16> (bit0/Mcount_counter2_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<17> (bit0/Mcount_counter2_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<18> (bit0/Mcount_counter2_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<19> (bit0/Mcount_counter2_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<20> (bit0/Mcount_counter2_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<21> (bit0/Mcount_counter2_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<22> (bit0/Mcount_counter2_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<23> (bit0/Mcount_counter2_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<24> (bit0/Mcount_counter2_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<25> (bit0/Mcount_counter2_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<26> (bit0/Mcount_counter2_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<27> (bit0/Mcount_counter2_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<28> (bit0/Mcount_counter2_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcount_counter2_cy<29> (bit0/Mcount_counter2_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  bit0/Mcount_counter2_cy<30> (bit0/Mcount_counter2_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  bit0/Mcount_counter2_xor<31> (Result<31>9)
+     FD:D                      0.030          bit0/counter2_31
     ----------------------------------------
-    Total                      3.060ns (2.647ns logic, 0.413ns route)
-                                       (86.5% logic, 13.5% route)
+    Total                      2.926ns (2.513ns logic, 0.413ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.474ns (frequency: 404.245MHz)
-  Total number of paths / destination ports: 153 / 17
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit4/osc_out<0>'
+  Total number of paths / destination ports: 62 / 1
 -------------------------------------------------------------------------
-Delay:               2.474ns (Levels of Logic = 18)
-  Source:            bit4/slow_clk_0 (FF)
-  Destination:       bit4/slow_clk_16 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: bit4/slow_clk_0 to bit4/slow_clk_16
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.478   0.399  bit4/slow_clk_0 (bit4/slow_clk_0)
-     INV:I->O              1   0.146   0.000  bit4/Mcount_slow_clk_lut<0>_INV_0 (bit4/Mcount_slow_clk_lut<0>)
-     MUXCY:S->O            1   0.472   0.000  bit4/Mcount_slow_clk_cy<0> (bit4/Mcount_slow_clk_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<1> (bit4/Mcount_slow_clk_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<2> (bit4/Mcount_slow_clk_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<3> (bit4/Mcount_slow_clk_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<4> (bit4/Mcount_slow_clk_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<5> (bit4/Mcount_slow_clk_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<6> (bit4/Mcount_slow_clk_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<7> (bit4/Mcount_slow_clk_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<8> (bit4/Mcount_slow_clk_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<9> (bit4/Mcount_slow_clk_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<10> (bit4/Mcount_slow_clk_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<11> (bit4/Mcount_slow_clk_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<12> (bit4/Mcount_slow_clk_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<13> (bit4/Mcount_slow_clk_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  bit4/Mcount_slow_clk_cy<14> (bit4/Mcount_slow_clk_cy<14>)
-     MUXCY:CI->O           0   0.029   0.000  bit4/Mcount_slow_clk_cy<15> (bit4/Mcount_slow_clk_cy<15>)
-     XORCY:CI->O           1   0.510   0.000  bit4/Mcount_slow_clk_xor<16> (Result<16>)
-     FD:D                      0.030          bit4/slow_clk_16
-    ----------------------------------------
-    Total                      2.474ns (2.075ns logic, 0.399ns route)
-                                       (83.9% logic, 16.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'bit4/osc_out<0>'
-  Total number of paths / destination ports: 256 / 64
--------------------------------------------------------------------------
-Offset:              3.927ns (Levels of Logic = 6)
-  Source:            enable (PAD)
-  Destination:       bit4/counter2_31 (LATCH)
-  Destination Clock: bit4/osc_out<0> rising
-
-  Data Path: enable to bit4/counter2_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.563  enable_IBUF (enable_IBUF)
-     LUT2:I0->O            1   0.124   0.421  bit4/counter/sel1/RO1/RO_PATH_INV<0>1 (bit4/counter/sel1/RO1/RO_PATH_INV<0>)
-     LUT1:I0->O            1   0.124   0.421  bit4/counter/sel1/RO1/RO_PATH_INV<1>1 (bit4/counter/sel1/RO1/RO_PATH_INV<1>)
-     LUT1:I0->O            1   0.124   0.421  bit4/counter/sel1/RO1/RO_PATH_INV<2>1 (bit4/counter/sel1/RO1/RO_PATH_INV<2>)
-     LUT1:I0->O            2   0.124   0.782  bit4/counter/sel1/RO1/RO_PATH_INV<3>1 (bit4/counter/sel1/RO1/RO_PATH_INV<3>)
-     LUT4:I0->O           64   0.124   0.559  bit4/osc_out<0>1 (bit4/osc_out<0>)
-     LDCE_1:GE                 0.139          bit4/counter1_30
-    ----------------------------------------
-    Total                      3.927ns (0.760ns logic, 3.167ns route)
-                                       (19.4% logic, 80.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'bit3/osc_out<0>'
-  Total number of paths / destination ports: 256 / 64
--------------------------------------------------------------------------
-Offset:              3.927ns (Levels of Logic = 6)
-  Source:            enable (PAD)
-  Destination:       bit3/counter2_31 (LATCH)
-  Destination Clock: bit3/osc_out<0> rising
-
-  Data Path: enable to bit3/counter2_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.563  enable_IBUF (enable_IBUF)
-     LUT2:I0->O            1   0.124   0.421  bit3/counter/sel1/RO1/RO_PATH_INV<0>1 (bit3/counter/sel1/RO1/RO_PATH_INV<0>)
-     LUT1:I0->O            1   0.124   0.421  bit3/counter/sel1/RO1/RO_PATH_INV<1>1 (bit3/counter/sel1/RO1/RO_PATH_INV<1>)
-     LUT1:I0->O            1   0.124   0.421  bit3/counter/sel1/RO1/RO_PATH_INV<2>1 (bit3/counter/sel1/RO1/RO_PATH_INV<2>)
-     LUT1:I0->O            2   0.124   0.782  bit3/counter/sel1/RO1/RO_PATH_INV<3>1 (bit3/counter/sel1/RO1/RO_PATH_INV<3>)
-     LUT4:I0->O           64   0.124   0.559  bit3/osc_out<0>1 (bit3/osc_out<0>)
-     LDCE_1:GE                 0.139          bit3/counter1_30
-    ----------------------------------------
-    Total                      3.927ns (0.760ns logic, 3.167ns route)
-                                       (19.4% logic, 80.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'bit2/osc_out<0>'
-  Total number of paths / destination ports: 256 / 64
--------------------------------------------------------------------------
-Offset:              3.927ns (Levels of Logic = 6)
-  Source:            enable (PAD)
-  Destination:       bit2/counter2_31 (LATCH)
-  Destination Clock: bit2/osc_out<0> rising
-
-  Data Path: enable to bit2/counter2_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.563  enable_IBUF (enable_IBUF)
-     LUT2:I0->O            1   0.124   0.421  bit2/counter/sel1/RO1/RO_PATH_INV<0>1 (bit2/counter/sel1/RO1/RO_PATH_INV<0>)
-     LUT1:I0->O            1   0.124   0.421  bit2/counter/sel1/RO1/RO_PATH_INV<1>1 (bit2/counter/sel1/RO1/RO_PATH_INV<1>)
-     LUT1:I0->O            1   0.124   0.421  bit2/counter/sel1/RO1/RO_PATH_INV<2>1 (bit2/counter/sel1/RO1/RO_PATH_INV<2>)
-     LUT1:I0->O            2   0.124   0.782  bit2/counter/sel1/RO1/RO_PATH_INV<3>1 (bit2/counter/sel1/RO1/RO_PATH_INV<3>)
-     LUT4:I0->O           64   0.124   0.559  bit2/osc_out<0>1 (bit2/osc_out<0>)
-     LDCE_1:GE                 0.139          bit2/counter1_30
-    ----------------------------------------
-    Total                      3.927ns (0.760ns logic, 3.167ns route)
-                                       (19.4% logic, 80.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'bit1/osc_out<0>'
-  Total number of paths / destination ports: 256 / 64
--------------------------------------------------------------------------
-Offset:              3.927ns (Levels of Logic = 6)
-  Source:            enable (PAD)
-  Destination:       bit1/counter2_31 (LATCH)
-  Destination Clock: bit1/osc_out<0> rising
-
-  Data Path: enable to bit1/counter2_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.563  enable_IBUF (enable_IBUF)
-     LUT2:I0->O            1   0.124   0.421  bit1/counter/sel1/RO1/RO_PATH_INV<0>1 (bit1/counter/sel1/RO1/RO_PATH_INV<0>)
-     LUT1:I0->O            1   0.124   0.421  bit1/counter/sel1/RO1/RO_PATH_INV<1>1 (bit1/counter/sel1/RO1/RO_PATH_INV<1>)
-     LUT1:I0->O            1   0.124   0.421  bit1/counter/sel1/RO1/RO_PATH_INV<2>1 (bit1/counter/sel1/RO1/RO_PATH_INV<2>)
-     LUT1:I0->O            2   0.124   0.782  bit1/counter/sel1/RO1/RO_PATH_INV<3>1 (bit1/counter/sel1/RO1/RO_PATH_INV<3>)
-     LUT4:I0->O           64   0.124   0.559  bit1/osc_out<0>1 (bit1/osc_out<0>)
-     LDCE_1:GE                 0.139          bit1/counter1_30
-    ----------------------------------------
-    Total                      3.927ns (0.760ns logic, 3.167ns route)
-                                       (19.4% logic, 80.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'bit0/osc_out<0>'
-  Total number of paths / destination ports: 256 / 64
--------------------------------------------------------------------------
-Offset:              3.927ns (Levels of Logic = 6)
-  Source:            enable (PAD)
-  Destination:       bit0/counter2_31 (LATCH)
-  Destination Clock: bit0/osc_out<0> rising
-
-  Data Path: enable to bit0/counter2_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.563  enable_IBUF (enable_IBUF)
-     LUT2:I0->O            1   0.124   0.421  bit0/counter/sel1/RO1/RO_PATH_INV<0>1 (bit0/counter/sel1/RO1/RO_PATH_INV<0>)
-     LUT1:I0->O            1   0.124   0.421  bit0/counter/sel1/RO1/RO_PATH_INV<1>1 (bit0/counter/sel1/RO1/RO_PATH_INV<1>)
-     LUT1:I0->O            1   0.124   0.421  bit0/counter/sel1/RO1/RO_PATH_INV<2>1 (bit0/counter/sel1/RO1/RO_PATH_INV<2>)
-     LUT1:I0->O            2   0.124   0.782  bit0/counter/sel1/RO1/RO_PATH_INV<3>1 (bit0/counter/sel1/RO1/RO_PATH_INV<3>)
-     LUT4:I0->O           64   0.124   0.559  bit0/osc_out<0>1 (bit0/osc_out<0>)
-     LDCE_1:GE                 0.139          bit0/counter1_30
-    ----------------------------------------
-    Total                      3.927ns (0.760ns logic, 3.167ns route)
-                                       (19.4% logic, 80.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'bit4/slow_clk_16'
-  Total number of paths / destination ports: 5 / 5
--------------------------------------------------------------------------
-Offset:              1.030ns (Levels of Logic = 1)
-  Source:            bit4/comparator (LATCH)
+Offset:              3.637ns (Levels of Logic = 18)
+  Source:            bit4/counter1_0 (FF)
   Destination:       led<4> (PAD)
-  Source Clock:      bit4/slow_clk_16 rising
+  Source Clock:      bit4/osc_out<0> rising
 
-  Data Path: bit4/comparator to led<4>
+  Data Path: bit4/counter1_0 to led<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD_1:G->Q             1   0.631   0.399  bit4/comparator (bit4/comparator)
+     FD:C->Q               3   0.478   0.790  bit4/counter1_0 (bit4/counter1_0)
+     LUT4:I0->O            1   0.124   0.000  bit4/Mcompar_comparator_lut<0> (bit4/Mcompar_comparator_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit4/Mcompar_comparator_cy<0> (bit4/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<1> (bit4/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<2> (bit4/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<3> (bit4/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<4> (bit4/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<5> (bit4/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<6> (bit4/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<7> (bit4/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<8> (bit4/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<9> (bit4/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<10> (bit4/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<11> (bit4/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<12> (bit4/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<13> (bit4/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit4/Mcompar_comparator_cy<14> (bit4/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit4/Mcompar_comparator_cy<15> (led_4_OBUF)
      OBUF:I->O                 0.000          led_4_OBUF (led<4>)
     ----------------------------------------
-    Total                      1.030ns (0.631ns logic, 0.399ns route)
-                                       (61.3% logic, 38.7% route)
+    Total                      3.637ns (1.912ns logic, 1.725ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit4/osc_out<1>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.621ns (Levels of Logic = 18)
+  Source:            bit4/counter2_1 (FF)
+  Destination:       led<4> (PAD)
+  Source Clock:      bit4/osc_out<1> rising
+
+  Data Path: bit4/counter2_1 to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit4/counter2_1 (bit4/counter2_1)
+     LUT4:I0->O            0   0.124   0.000  bit4/Mcompar_comparator_lutdi (bit4/Mcompar_comparator_lutdi)
+     MUXCY:DI->O           1   0.456   0.000  bit4/Mcompar_comparator_cy<0> (bit4/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<1> (bit4/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<2> (bit4/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<3> (bit4/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<4> (bit4/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<5> (bit4/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<6> (bit4/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<7> (bit4/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<8> (bit4/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<9> (bit4/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<10> (bit4/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<11> (bit4/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<12> (bit4/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit4/Mcompar_comparator_cy<13> (bit4/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit4/Mcompar_comparator_cy<14> (bit4/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit4/Mcompar_comparator_cy<15> (led_4_OBUF)
+     OBUF:I->O                 0.000          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      3.621ns (1.896ns logic, 1.725ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit3/osc_out<0>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.637ns (Levels of Logic = 18)
+  Source:            bit3/counter1_0 (FF)
+  Destination:       led<3> (PAD)
+  Source Clock:      bit3/osc_out<0> rising
+
+  Data Path: bit3/counter1_0 to led<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit3/counter1_0 (bit3/counter1_0)
+     LUT4:I0->O            1   0.124   0.000  bit3/Mcompar_comparator_lut<0> (bit3/Mcompar_comparator_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit3/Mcompar_comparator_cy<0> (bit3/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<1> (bit3/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<2> (bit3/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<3> (bit3/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<4> (bit3/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<5> (bit3/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<6> (bit3/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<7> (bit3/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<8> (bit3/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<9> (bit3/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<10> (bit3/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<11> (bit3/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<12> (bit3/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<13> (bit3/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit3/Mcompar_comparator_cy<14> (bit3/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit3/Mcompar_comparator_cy<15> (led_3_OBUF)
+     OBUF:I->O                 0.000          led_3_OBUF (led<3>)
+    ----------------------------------------
+    Total                      3.637ns (1.912ns logic, 1.725ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit3/osc_out<1>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.621ns (Levels of Logic = 18)
+  Source:            bit3/counter2_1 (FF)
+  Destination:       led<3> (PAD)
+  Source Clock:      bit3/osc_out<1> rising
+
+  Data Path: bit3/counter2_1 to led<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit3/counter2_1 (bit3/counter2_1)
+     LUT4:I0->O            0   0.124   0.000  bit3/Mcompar_comparator_lutdi (bit3/Mcompar_comparator_lutdi)
+     MUXCY:DI->O           1   0.456   0.000  bit3/Mcompar_comparator_cy<0> (bit3/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<1> (bit3/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<2> (bit3/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<3> (bit3/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<4> (bit3/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<5> (bit3/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<6> (bit3/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<7> (bit3/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<8> (bit3/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<9> (bit3/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<10> (bit3/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<11> (bit3/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<12> (bit3/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit3/Mcompar_comparator_cy<13> (bit3/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit3/Mcompar_comparator_cy<14> (bit3/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit3/Mcompar_comparator_cy<15> (led_3_OBUF)
+     OBUF:I->O                 0.000          led_3_OBUF (led<3>)
+    ----------------------------------------
+    Total                      3.621ns (1.896ns logic, 1.725ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit2/osc_out<0>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.637ns (Levels of Logic = 18)
+  Source:            bit2/counter1_0 (FF)
+  Destination:       led<2> (PAD)
+  Source Clock:      bit2/osc_out<0> rising
+
+  Data Path: bit2/counter1_0 to led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit2/counter1_0 (bit2/counter1_0)
+     LUT4:I0->O            1   0.124   0.000  bit2/Mcompar_comparator_lut<0> (bit2/Mcompar_comparator_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit2/Mcompar_comparator_cy<0> (bit2/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<1> (bit2/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<2> (bit2/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<3> (bit2/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<4> (bit2/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<5> (bit2/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<6> (bit2/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<7> (bit2/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<8> (bit2/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<9> (bit2/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<10> (bit2/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<11> (bit2/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<12> (bit2/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<13> (bit2/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit2/Mcompar_comparator_cy<14> (bit2/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit2/Mcompar_comparator_cy<15> (led_2_OBUF)
+     OBUF:I->O                 0.000          led_2_OBUF (led<2>)
+    ----------------------------------------
+    Total                      3.637ns (1.912ns logic, 1.725ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit2/osc_out<1>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.621ns (Levels of Logic = 18)
+  Source:            bit2/counter2_1 (FF)
+  Destination:       led<2> (PAD)
+  Source Clock:      bit2/osc_out<1> rising
+
+  Data Path: bit2/counter2_1 to led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit2/counter2_1 (bit2/counter2_1)
+     LUT4:I0->O            0   0.124   0.000  bit2/Mcompar_comparator_lutdi (bit2/Mcompar_comparator_lutdi)
+     MUXCY:DI->O           1   0.456   0.000  bit2/Mcompar_comparator_cy<0> (bit2/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<1> (bit2/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<2> (bit2/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<3> (bit2/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<4> (bit2/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<5> (bit2/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<6> (bit2/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<7> (bit2/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<8> (bit2/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<9> (bit2/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<10> (bit2/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<11> (bit2/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<12> (bit2/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit2/Mcompar_comparator_cy<13> (bit2/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit2/Mcompar_comparator_cy<14> (bit2/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit2/Mcompar_comparator_cy<15> (led_2_OBUF)
+     OBUF:I->O                 0.000          led_2_OBUF (led<2>)
+    ----------------------------------------
+    Total                      3.621ns (1.896ns logic, 1.725ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit1/osc_out<0>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.637ns (Levels of Logic = 18)
+  Source:            bit1/counter1_0 (FF)
+  Destination:       led<1> (PAD)
+  Source Clock:      bit1/osc_out<0> rising
+
+  Data Path: bit1/counter1_0 to led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit1/counter1_0 (bit1/counter1_0)
+     LUT4:I0->O            1   0.124   0.000  bit1/Mcompar_comparator_lut<0> (bit1/Mcompar_comparator_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit1/Mcompar_comparator_cy<0> (bit1/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<1> (bit1/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<2> (bit1/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<3> (bit1/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<4> (bit1/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<5> (bit1/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<6> (bit1/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<7> (bit1/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<8> (bit1/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<9> (bit1/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<10> (bit1/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<11> (bit1/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<12> (bit1/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<13> (bit1/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit1/Mcompar_comparator_cy<14> (bit1/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit1/Mcompar_comparator_cy<15> (led_1_OBUF)
+     OBUF:I->O                 0.000          led_1_OBUF (led<1>)
+    ----------------------------------------
+    Total                      3.637ns (1.912ns logic, 1.725ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit1/osc_out<1>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.621ns (Levels of Logic = 18)
+  Source:            bit1/counter2_1 (FF)
+  Destination:       led<1> (PAD)
+  Source Clock:      bit1/osc_out<1> rising
+
+  Data Path: bit1/counter2_1 to led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit1/counter2_1 (bit1/counter2_1)
+     LUT4:I0->O            0   0.124   0.000  bit1/Mcompar_comparator_lutdi (bit1/Mcompar_comparator_lutdi)
+     MUXCY:DI->O           1   0.456   0.000  bit1/Mcompar_comparator_cy<0> (bit1/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<1> (bit1/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<2> (bit1/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<3> (bit1/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<4> (bit1/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<5> (bit1/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<6> (bit1/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<7> (bit1/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<8> (bit1/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<9> (bit1/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<10> (bit1/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<11> (bit1/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<12> (bit1/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit1/Mcompar_comparator_cy<13> (bit1/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit1/Mcompar_comparator_cy<14> (bit1/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit1/Mcompar_comparator_cy<15> (led_1_OBUF)
+     OBUF:I->O                 0.000          led_1_OBUF (led<1>)
+    ----------------------------------------
+    Total                      3.621ns (1.896ns logic, 1.725ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit0/osc_out<0>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.637ns (Levels of Logic = 18)
+  Source:            bit0/counter1_0 (FF)
+  Destination:       led<0> (PAD)
+  Source Clock:      bit0/osc_out<0> rising
+
+  Data Path: bit0/counter1_0 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit0/counter1_0 (bit0/counter1_0)
+     LUT4:I0->O            1   0.124   0.000  bit0/Mcompar_comparator_lut<0> (bit0/Mcompar_comparator_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  bit0/Mcompar_comparator_cy<0> (bit0/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<1> (bit0/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<2> (bit0/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<3> (bit0/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<4> (bit0/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<5> (bit0/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<6> (bit0/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<7> (bit0/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<8> (bit0/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<9> (bit0/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<10> (bit0/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<11> (bit0/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<12> (bit0/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<13> (bit0/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit0/Mcompar_comparator_cy<14> (bit0/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit0/Mcompar_comparator_cy<15> (led_0_OBUF)
+     OBUF:I->O                 0.000          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      3.637ns (1.912ns logic, 1.725ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bit0/osc_out<1>'
+  Total number of paths / destination ports: 62 / 1
+-------------------------------------------------------------------------
+Offset:              3.621ns (Levels of Logic = 18)
+  Source:            bit0/counter2_1 (FF)
+  Destination:       led<0> (PAD)
+  Source Clock:      bit0/osc_out<1> rising
+
+  Data Path: bit0/counter2_1 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.478   0.790  bit0/counter2_1 (bit0/counter2_1)
+     LUT4:I0->O            0   0.124   0.000  bit0/Mcompar_comparator_lutdi (bit0/Mcompar_comparator_lutdi)
+     MUXCY:DI->O           1   0.456   0.000  bit0/Mcompar_comparator_cy<0> (bit0/Mcompar_comparator_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<1> (bit0/Mcompar_comparator_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<2> (bit0/Mcompar_comparator_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<3> (bit0/Mcompar_comparator_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<4> (bit0/Mcompar_comparator_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<5> (bit0/Mcompar_comparator_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<6> (bit0/Mcompar_comparator_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<7> (bit0/Mcompar_comparator_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<8> (bit0/Mcompar_comparator_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<9> (bit0/Mcompar_comparator_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<10> (bit0/Mcompar_comparator_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<11> (bit0/Mcompar_comparator_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<12> (bit0/Mcompar_comparator_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  bit0/Mcompar_comparator_cy<13> (bit0/Mcompar_comparator_cy<13>)
+     MUXCY:CI->O           1   0.334   0.536  bit0/Mcompar_comparator_cy<14> (bit0/Mcompar_comparator_cy<14>)
+     LUT5:I3->O            1   0.124   0.399  bit0/Mcompar_comparator_cy<15> (led_0_OBUF)
+     OBUF:I->O                 0.000          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      3.621ns (1.896ns logic, 1.725ns route)
+                                       (52.4% logic, 47.6% route)
 
 =========================================================================
 
@@ -911,8 +1284,15 @@ Clock to Setup on destination clock bit0/osc_out<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-bit0/osc_out<0>|    3.060|         |         |         |
-clk            |    2.172|         |         |         |
+bit0/osc_out<0>|    2.926|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bit0/osc_out<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+bit0/osc_out<1>|    2.926|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock bit1/osc_out<0>
@@ -920,8 +1300,15 @@ Clock to Setup on destination clock bit1/osc_out<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-bit1/osc_out<0>|    3.060|         |         |         |
-clk            |    2.172|         |         |         |
+bit1/osc_out<0>|    2.926|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bit1/osc_out<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+bit1/osc_out<1>|    2.926|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock bit2/osc_out<0>
@@ -929,8 +1316,15 @@ Clock to Setup on destination clock bit2/osc_out<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-bit2/osc_out<0>|    3.060|         |         |         |
-clk            |    2.172|         |         |         |
+bit2/osc_out<0>|    2.926|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bit2/osc_out<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+bit2/osc_out<1>|    2.926|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock bit3/osc_out<0>
@@ -938,8 +1332,15 @@ Clock to Setup on destination clock bit3/osc_out<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-bit3/osc_out<0>|    3.060|         |         |         |
-clk            |    2.172|         |         |         |
+bit3/osc_out<0>|    2.926|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bit3/osc_out<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+bit3/osc_out<1>|    2.926|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock bit4/osc_out<0>
@@ -947,41 +1348,28 @@ Clock to Setup on destination clock bit4/osc_out<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-bit4/osc_out<0>|    3.060|         |         |         |
-clk            |    2.172|         |         |         |
+bit4/osc_out<0>|    2.926|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock bit4/slow_clk_16
+Clock to Setup on destination clock bit4/osc_out<1>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-bit0/osc_out<0>|    3.402|         |         |         |
-bit1/osc_out<0>|    3.402|         |         |         |
-bit2/osc_out<0>|    3.402|         |         |         |
-bit3/osc_out<0>|    3.402|         |         |         |
-bit4/osc_out<0>|    3.402|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    2.474|         |         |         |
+bit4/osc_out<1>|    2.926|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.10 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.47 secs
  
 --> 
 
-Total memory usage is 411832 kilobytes
+Total memory usage is 410756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   84 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

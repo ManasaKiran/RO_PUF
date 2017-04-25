@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity OSC_sel is
     Port ( enable : in std_logic;
-	        sel : in  STD_LOGIC_VECTOR (2 downto 0);
+	        sel : in  STD_LOGIC_VECTOR (3 downto 0);
            osc_out : out  STD_LOGIC_VECTOR (1 downto 0));
 end OSC_sel;
 
@@ -40,29 +40,23 @@ component puf_design
 port (enable : in std_logic;
        osc_out : out std_logic_vector(2 downto 0));
 end component;
-signal osc_out1, osc_out2 : std_logic_vector(2 downto 0);
+signal osc_out1 : std_logic_vector(2 downto 0);
 begin
 sel1 : puf_design port map(enable,osc_out1);
-sel2 : puf_design port map(enable,osc_out2);
 
-process(sel)
-begin 
-if sel = "100" then 
-   osc_out(0) <= osc_out1(0);
-	osc_out(1) <= osc_out2(0);
-	
-elsif sel = "010" then
-   osc_out(0) <= osc_out1(1);
-	osc_out(1) <= osc_out2(1);
-	
-elsif sel = "001" then 
-   osc_out(0) <= osc_out1(2);
-   osc_out(1) <= osc_out2(2);	
-else 
-   osc_out(0) <= '0';
-	osc_out(1) <= '0';
-	
-end if;	
-end process ;
+--top mux--
+with sel(1 downto 0) select osc_out(0) <=
+    osc_out1(0) when "00",
+    osc_out1(1) when "01",
+    osc_out1(2) when "10",
+	 '0' when others;
+
+--bot mux--
+with sel(3 downto 2) select osc_out(1) <=
+    osc_out1(0) when "00",
+    osc_out1(1) when "01",
+    osc_out1(2) when "10",
+	 '0' when others;	 
+
 end Behavioral;
 
