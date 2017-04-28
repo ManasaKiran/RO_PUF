@@ -1,0 +1,5 @@
+vhdl isim_temp "ROwithPUF.vhd"
+vhdl isim_temp "puf_design.vhd"
+vhdl isim_temp "OSC_sel.vhd"
+vhdl isim_temp "freq_counter.vhd"
+vhdl isim_temp "final_topmodule.vhd"

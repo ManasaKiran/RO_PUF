@@ -1,18 +1,50 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Apr 25 18:14:24 2017
+// Written by: Map P.20131013 on Thu Apr 27 03:38:11 2017
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "btnc" LOCATE = SITE "N17" LEVEL 1;
 COMP "sel<0>" LOCATE = SITE "L16" LEVEL 1;
 COMP "sel<1>" LOCATE = SITE "M13" LEVEL 1;
 COMP "sel<2>" LOCATE = SITE "R15" LEVEL 1;
 COMP "sel<3>" LOCATE = SITE "R17" LEVEL 1;
-COMP "led<0>" LOCATE = SITE "H17" LEVEL 1;
-COMP "led<1>" LOCATE = SITE "K15" LEVEL 1;
-COMP "led<2>" LOCATE = SITE "J13" LEVEL 1;
-COMP "led<3>" LOCATE = SITE "N14" LEVEL 1;
-COMP "led<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "SSEG_CA<6>" LOCATE = SITE "L18" LEVEL 1;
+COMP "SSEG_CA<5>" LOCATE = SITE "T11" LEVEL 1;
+COMP "SSEG_CA<7>" LOCATE = SITE "H15" LEVEL 1;
+COMP "SSEG_CA<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "SSEG_CA<2>" LOCATE = SITE "K16" LEVEL 1;
+COMP "SSEG_CA<1>" LOCATE = SITE "R10" LEVEL 1;
+COMP "SSEG_CA<4>" LOCATE = SITE "P15" LEVEL 1;
 COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "SSEG_CA<3>" LOCATE = SITE "K13" LEVEL 1;
+COMP "SSEG_AN<6>" LOCATE = SITE "K2" LEVEL 1;
+COMP "SSEG_AN<5>" LOCATE = SITE "T14" LEVEL 1;
+COMP "SSEG_AN<7>" LOCATE = SITE "U13" LEVEL 1;
+COMP "SSEG_AN<0>" LOCATE = SITE "J17" LEVEL 1;
+COMP "led" LOCATE = SITE "H17" LEVEL 1;
+COMP "SSEG_AN<2>" LOCATE = SITE "T9" LEVEL 1;
+COMP "SSEG_AN<1>" LOCATE = SITE "J18" LEVEL 1;
+COMP "SSEG_AN<4>" LOCATE = SITE "P14" LEVEL 1;
+COMP "SSEG_AN<3>" LOCATE = SITE "J14" LEVEL 1;
 COMP "enable" LOCATE = SITE "J15" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "bit31/slow_clk_0" BEL "bit31/slow_clk_1" BEL
+        "bit31/slow_clk_2" BEL "bit31/slow_clk_3" BEL "bit31/slow_clk_4" BEL
+        "bit31/slow_clk_5" BEL "bit31/slow_clk_6" BEL "bit31/slow_clk_7" BEL
+        "bit31/slow_clk_8" BEL "bit31/slow_clk_9" BEL "bit31/slow_clk_10" BEL
+        "bit31/slow_clk_11" BEL "bit31/slow_clk_12" BEL "bit31/slow_clk_13"
+        BEL "bit31/slow_clk_14" BEL "bit31/slow_clk_15" BEL
+        "bit31/slow_clk_16" BEL "bit31/slow_clk_17" BEL "bit31/slow_clk_18"
+        BEL "bit31/slow_clk_19" BEL "bit31/slow_clk_20" BEL
+        "bit31/slow_clk_21" BEL "bit31/slow_clk_22" BEL "bit31/slow_clk_23"
+        BEL "bit31/slow_clk_24" BEL "bit31/slow_clk_25" BEL
+        "bit31/slow_clk_26" BEL "bit31/slow_clk_27" BEL "Cntr_16" BEL
+        "Cntr_17" BEL "Cntr_18" BEL "Cntr_19" BEL "Cntr_20" BEL "Cntr_21" BEL
+        "Cntr_22" BEL "Cntr_23" BEL "Cntr_24" BEL "Cntr_25" BEL "Cntr_26" BEL
+        "Val_3" BEL "Val_1" BEL "Val_2" BEL "Val_0" BEL "Cntr_0" BEL "Cntr_1"
+        BEL "Cntr_2" BEL "Cntr_3" BEL "Cntr_4" BEL "Cntr_5" BEL "Cntr_6" BEL
+        "Cntr_7" BEL "Cntr_8" BEL "Cntr_9" BEL "Cntr_10" BEL "Cntr_11" BEL
+        "Cntr_12" BEL "Cntr_13" BEL "Cntr_14" BEL "Cntr_15" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

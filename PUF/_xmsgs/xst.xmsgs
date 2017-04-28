@@ -5,30 +5,29 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 72: <arg fmt="%s" index="1">counter1</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 62: <arg fmt="%s" index="1">slow_clk</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\final_topmodule.vhd" Line 57: <arg fmt="%s" index="1">comp</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 74: <arg fmt="%s" index="1">counter1</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 75: <arg fmt="%s" index="1">counter1</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">puf_design</arg>&gt;: instances &lt;<arg fmt="%s" index="2">RO1</arg>&gt;, &lt;<arg fmt="%s" index="3">RO2</arg>&gt; of unit &lt;<arg fmt="%s" index="4">RO</arg>&gt; are equivalent, second instance is removed
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 91: <arg fmt="%s" index="1">counter2</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">puf_design</arg>&gt;: instances &lt;<arg fmt="%s" index="2">RO1</arg>&gt;, &lt;<arg fmt="%s" index="3">RO3</arg>&gt; of unit &lt;<arg fmt="%s" index="4">RO</arg>&gt; are equivalent, second instance is removed
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 92: <arg fmt="%s" index="1">counter2</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">final_topmodule</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 106: <arg fmt="%s" index="1">counter1</arg> should be on the sensitivity list of the process
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">final_topmodule</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 69: Signal <arg fmt="%s" index="1">counter1[19]</arg> in unit <arg fmt="%s" index="2">freq_counter</arg> is connected to following multiple drivers:
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">final_topmodule</arg> : the following signal(s) form a combinatorial loop: </msg>
-
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">final_topmodule</arg> : the following signal(s) form a combinatorial loop: </msg>
-
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">final_topmodule</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="error" file="HDLCompiler" num="1401" delta="new" >"C:\Users\Manasa Kiran\Documents\GitHub\RO_PUF\PUF\freq_counter.vhd" Line 85: Signal <arg fmt="%s" index="1">counter2[19]</arg> in unit <arg fmt="%s" index="2">freq_counter</arg> is connected to following multiple drivers:
+</msg>
 
 </messages>
 
