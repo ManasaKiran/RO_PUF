@@ -1,6 +1,6 @@
 # RO_PUF
 PUF design using RO
-# RO_PUF
+
 Sw(0) is used as enable pin
 sw(4 downto 1) is used as input (sel) line 
 How to operate :
