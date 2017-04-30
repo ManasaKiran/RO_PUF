@@ -35,7 +35,7 @@ port ( clk : in std_logic;
        do : out std_logic;
        enable : in std_logic;
 		 sel : in std_logic_vector(3 downto 0);
-       compared_value : out std_logic);
+		 compared_value : out std_logic);
 end freq_counter;
 
 architecture Behavioral of freq_counter is
@@ -48,78 +48,82 @@ end component;
 
 signal slow_clk : std_logic_vector(27 downto 0):= (others => '0');
 signal osc_out : std_logic_vector (1 downto 0);
-signal counter1, counter2 : std_logic_vector(19 downto 0):= (others => '0');
-signal comparator : std_logic ;
+signal counter1, counter2 : std_logic_vector(31 downto 0):= (others => '0');
+signal comparator,s : std_logic := '0' ;
 signal finish1,finish2, done:std_logic :='0';
 --signal slow_clk : std_logic_vector(20 downto 0);
 begin
 counter : OSC_sel port map (enable,sel,osc_out);
 
 process(clk) begin
- if (rising_edge(clk)) then
+ if (rising_edge(clk) and enable = '1') then
     slow_clk <= slow_clk + 1;
-	end if ;
 	if (slow_clk = x"fffffff") then
 	   done <= '1';
 		end if;
+		end if;
+	if (enable = '0') then
+    slow_clk <= (others => '0');
+    done <= '0';
+    end if ;	 
 	end process;
 	
 do <= done ;
 	
-process (osc_out(0),done,finish1,finish2) 
+process (osc_out(0),done) 
 begin
-if (done = '1' and finish1 = '0' and finish2 = '0') then
---if (finish1='0' and finish2='0' and done = '0') then
-if (osc_out(0) = '1') then
-	    counter1 <= counter1 + 1 ;
-		 if counter1= x"FFFFF" then
-		 finish1<='1';
-		 --else 
-		 --finish1 <= '0';
-		 end if;
+if (done = '0')then
+  finish1 <= '0';
+  counter1 <= (others => '0');
+  end if;
+--if (done = '1') then
+if (finish1='0' and finish2='0' and done = '1') then
+if(osc_out(0)= '1') then
+	    counter1 <= counter1 + '1';
+		 if (counter1 = x"000FFFFF") then
+    	 finish1<='1';
+--		 --else 
+--		 --finish1 <= '0';
+	    end if;
 
 end if;
+end if;
+end process;
+
+process (osc_out(1),done) 
+begin
+if (done = '0') then
+  finish2 <= '0';
+  counter2 <= (others => '0');
 end if ;
-end process;
-
-process (osc_out(1),done,finish1,finish2) 
-begin
-
---if (finish1='0' and finish2='0' and done = '0') then
-if (done = '1' and finish1 = '0' and finish2 = '0') then
-if (osc_out(1) = '1') then
-	    counter2 <= counter2 + 1 ;
-		 if counter2= x"FFFFF" then
+if (finish1='0' and finish2='0' and done = '1') then
+--if (done = '1') then
+if (osc_out(1)= '1') then
+	    counter2 <= counter2 + '1' ;
+		if counter2= x"000FFFFF" then
 		 finish2<='1';
-		 --else 
-		 --finish2 <= '0';
+--		 --else 
+--		 --finish2 <= '0';
 		 end if;
 end if;
 end if;
 
 end process;
 
-process(done,finish1,finish2)
+process(finish1,finish2)
 begin
-if (done = '1') then
+--if (done = '1') then
     if (finish1 = '1' or finish2 = '1') then
     if (counter1 > counter2) then 
-	     compared_value <= '0';
+	     comparator <= '0';
     else 
-	     compared_value <= '1';
+	     comparator <= '1';
 	 end if ;
-	 end if ;
+compared_value <= comparator;
+--	  compared_value2 <= counter2;
+	-- end if ;
 end if;	 
---compared_value <= comparator;	 
-end process ;
 
-process(enable) begin
-if (enable = '0') then
- finish1 <= '0';
- finish2 <= '0';
- counter1 <= (others =>'0');
- counter2 <= (others => '0');
- end if ;
- end process;
- 
+end process ;
+	  
 end Behavioral;

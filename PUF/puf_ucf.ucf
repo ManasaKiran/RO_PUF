@@ -2,7 +2,7 @@
 ## To use it in a project:
 ## - uncomment the lines corresponding to used pins
 ## - rename the used signals according to the project
-
+##INST "RO*" AREA_GROUP = RO_PLACEMENT1;  AREA_GROUP "RO_PLACEMENT1" RANGE = SLICE_X58Y0:SLICE_X65Y10;
 ## Clock signal
 NET "clk"   LOC = "E3"	| IOSTANDARD = "LVCMOS33";					#Bank = 35, Pin name = #IO_L12P_T1_MRCC_35,					Sch name = clk100mhz
 NET "clk" TNM_NET = sys_clk_pin;
@@ -25,7 +25,7 @@ NET "sel<3>"          LOC=R17 | IOSTANDARD=LVCMOS33; #IO_L12N_T1_MRCC_14
 #NET "sw<12>"         LOC=H6 | IOSTANDARD=LVCMOS33; #IO_L24P_T3_35
 #NET "sw<13>"         LOC=U12 | IOSTANDARD=LVCMOS33; #IO_L20P_T3_A08_D24_14
 #NET "sw<14>"         LOC=U11 | IOSTANDARD=LVCMOS33; #IO_L19N_T3_A09_D25_VREF_14
-#NET "sw<15>"         LOC=V10 | IOSTANDARD=LVCMOS33; #IO_L21P_T3_DQS_14
+#NET "sw"         LOC=V10 | IOSTANDARD=LVCMOS33; #IO_L21P_T3_DQS_14
 
 
 ## Buttons

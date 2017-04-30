@@ -1,15 +1,15 @@
 Command line:
    RO_isim_beh.exe
      -simmode  gui
-     -simrunnum  1
-     -socket  58699
+     -simrunnum  0
+     -socket  64398
 
-Tue Apr 25 17:32:43 2017
+Fri Apr 28 00:24:28 2017
 
 
  Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 842.105 Meg
+ Current Memory Usage: 842.15 Meg
 
  Total Signals          : 3
  Total Nets             : 7
@@ -21,9 +21,9 @@ Tue Apr 25 17:32:43 2017
  Total Scalar Nets and Variables : 372
 Total Line Count : 4
 
- Total Simulation Time: 0.140625 sec
+ Total Simulation Time: 0.0625 sec
 
- Current Memory Usage: 370.246 Meg
+ Current Memory Usage: 684.863 Meg
 
-Tue Apr 25 18:35:10 2017
+Fri Apr 28 00:25:40 2017
 

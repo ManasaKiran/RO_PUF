@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Thu Apr 27 03:37:17 2017
+Mapped Date    : Sat Apr 29 16:37:49 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,24 +19,24 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 33 secs 
-Total CPU  time at the beginning of Placer: 33 secs 
+Total REAL time at the beginning of Placer: 41 secs 
+Total CPU  time at the beginning of Placer: 39 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:1c6783dd) REAL time: 35 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:df0ab124) REAL time: 43 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:1c6783dd) REAL time: 35 secs 
+Phase 2.7  Design Feasibility Check (Checksum:df0ab124) REAL time: 44 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:1c6783dd) REAL time: 35 secs 
+Phase 3.31  Local Placement Optimization (Checksum:df0ab124) REAL time: 44 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:e84e18) REAL time: 37 secs 
+(Checksum:9944bf74) REAL time: 47 secs 
 
-...................................
+..................
 Phase 5.30  Global Clock Region Assignment
 
 
@@ -44,108 +44,203 @@ Phase 5.30  Global Clock Region Assignment
 # GLOBAL CLOCK NET DISTRIBUTION UCF REPORT:
 #
 # Number of Global Clock Regions : 8
-# Number of Global Clock Networks: 16
+# Number of Global Clock Networks: 32
 #
 # Clock Region Assignment: SUCCESSFUL
 
 # Location of Clock Components
-INST "bit26/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y24" ;
-INST "bit29/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y7" ;
-INST "bit24/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y25" ;
-INST "bit28/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y6" ;
-INST "bit17/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y26" ;
-INST "bit21/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y5" ;
-INST "bit25/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y27" ;
-INST "bit20/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y4" ;
-INST "clk_BUFGP/BUFG" LOC = "BUFGCTRL_X0Y31" ;
-INST "bit23/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y28" ;
-INST "bit27/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y3" ;
-INST "bit31/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y29" ;
-INST "bit19/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y2" ;
-INST "bit30/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y30" ;
-INST "bit18/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y1" ;
-INST "bit22/done_finish2_AND_27_o_BUFG" LOC = "BUFGCTRL_X0Y0" ;
-INST "clk" LOC = "E3" ;
+INST "bit25/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y0" ;
+INST "bit7/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y1" ;
+INST "bit15/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y2" ;
+INST "bit8/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y3" ;
+INST "bit21/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y4" ;
+INST "bit6/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y5" ;
+INST "bit31/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y6" ;
+INST "bit11/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y7" ;
+INST "bit17/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y8" ;
+INST "bit27/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y9" ;
+INST "bit4/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y10" ;
+INST "bit3/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y11" ;
+INST "bit2/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y12" ;
+INST "bit28/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y13" ;
+INST "bit9/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y14" ;
+INST "bit18/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y15" ;
+INST "bit0/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y16" ;
+INST "bit26/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y17" ;
+INST "bit16/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y18" ;
+INST "bit24/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y19" ;
+INST "bit23/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y20" ;
+INST "bit5/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y21" ;
+INST "bit14/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y22" ;
+INST "bit22/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y23" ;
+INST "bit13/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y24" ;
+INST "bit29/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y25" ;
+INST "bit12/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y26" ;
+INST "bit20/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y27" ;
+INST "bit19/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y28" ;
+INST "bit1/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y29" ;
+INST "bit30/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y30" ;
+INST "bit10/done_osc_out[0]_MUX_79_o_BUFG" LOC = "BUFGCTRL_X0Y31" ;
 
-# bit26/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y24
-NET "bit26/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit26/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit26/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit26/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit26/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit25/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y0
+NET "bit25/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit25/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit25/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit25/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit25/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
 
-# bit29/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y7
-NET "bit29/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit29/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit29/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit29/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit29/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit7/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y1
+NET "bit7/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit7/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit7/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit7/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit7/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
 
-# bit24/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y25
-NET "bit24/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit24/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit24/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit24/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit24/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit15/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y2
+NET "bit15/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit15/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit15/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit15/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit15/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
 
-# bit28/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y6
-NET "bit28/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit28/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit28/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit28/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit28/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit8/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y3
+NET "bit8/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit8/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit8/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit8/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit8/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
 
-# bit17/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y26
-NET "bit17/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit17/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit17/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit17/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit17/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit21/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y4
+NET "bit21/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit21/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit21/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit21/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit21/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1 ;
 
-# bit21/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y5
-NET "bit21/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit21/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit21/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit21/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit21/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit6/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y5
+NET "bit6/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit6/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit6/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit6/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit6/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1 ;
 
-# bit25/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y27
-NET "bit25/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit25/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit25/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit25/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit25/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit31/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y6
+NET "bit31/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit31/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit31/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit31/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit31/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1 ;
 
-# bit20/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y4
-NET "bit20/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit20/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit20/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit20/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit20/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit11/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y7
+NET "bit11/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit11/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit11/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit11/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit11/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1 ;
 
-# clk_BUFGP driven by BUFGCTRL_X0Y31
-NET "clk_BUFGP" TNM_NET = "TN_clk_BUFGP" ;
-TIMEGRP "TN_clk_BUFGP" AREA_GROUP = "CLKAG_clk_BUFGP" ;
-AREA_GROUP "CLKAG_clk_BUFGP" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit17/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y8
+NET "bit17/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit17/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit17/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit17/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit17/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1 ;
 
-# bit23/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y28
-NET "bit23/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit23/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit23/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit23/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit23/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit27/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y9
+NET "bit27/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit27/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit27/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit27/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit27/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1 ;
 
-# bit27/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y3
-NET "bit27/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit27/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit27/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit27/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit27/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
+# bit4/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y10
+NET "bit4/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit4/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit4/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit4/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit4/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
 
-# bit31/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y29
-NET "bit31/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit31/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit31/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit31/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit31/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit3/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y11
+NET "bit3/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit3/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit3/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit3/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit3/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y1 ;
 
-# bit19/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y2
-NET "bit19/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit19/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit19/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit19/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit19/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
+# bit2/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y12
+NET "bit2/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit2/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit2/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit2/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit2/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
 
-# bit30/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y30
-NET "bit30/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit30/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit30/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit30/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit30/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+# bit28/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y13
+NET "bit28/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit28/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit28/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit28/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit28/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
 
-# bit18/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y1
-NET "bit18/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit18/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit18/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit18/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit18/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
+# bit9/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y14
+NET "bit9/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit9/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit9/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit9/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit9/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X1Y1 ;
 
-# bit22/done_finish2_AND_27_o_BUFG driven by BUFGCTRL_X0Y0
-NET "bit22/done_finish2_AND_27_o_BUFG" TNM_NET = "TN_bit22/done_finish2_AND_27_o_BUFG" ;
-TIMEGRP "TN_bit22/done_finish2_AND_27_o_BUFG" AREA_GROUP = "CLKAG_bit22/done_finish2_AND_27_o_BUFG" ;
-AREA_GROUP "CLKAG_bit22/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
+# bit18/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y15
+NET "bit18/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit18/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit18/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit18/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit18/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X1Y2, CLOCKREGION_X1Y3 ;
+
+# bit0/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y16
+NET "bit0/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit0/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit0/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit0/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit0/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0 ;
+
+# bit26/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y17
+NET "bit26/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit26/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit26/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit26/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit26/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# bit16/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y18
+NET "bit16/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit16/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit16/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit16/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit16/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# bit24/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y19
+NET "bit24/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit24/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit24/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit24/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit24/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0 ;
+
+# bit23/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y20
+NET "bit23/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit23/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit23/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit23/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit23/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# bit5/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y21
+NET "bit5/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit5/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit5/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit5/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit5/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# bit14/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y22
+NET "bit14/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit14/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit14/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit14/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit14/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0 ;
+
+# bit22/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y23
+NET "bit22/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit22/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit22/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit22/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit22/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# bit13/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y24
+NET "bit13/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit13/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit13/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit13/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit13/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y2, CLOCKREGION_X0Y3 ;
+
+# bit29/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y25
+NET "bit29/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit29/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit29/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit29/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit29/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# bit12/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y26
+NET "bit12/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit12/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit12/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit12/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit12/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# bit20/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y27
+NET "bit20/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit20/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit20/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit20/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit20/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X1Y2, CLOCKREGION_X1Y3 ;
+
+# bit19/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y28
+NET "bit19/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit19/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit19/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit19/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit19/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2 ;
+
+# bit1/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y29
+NET "bit1/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit1/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit1/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit1/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit1/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2 ;
+
+# bit30/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y30
+NET "bit30/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit30/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit30/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit30/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit30/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X0Y3 ;
+
+# bit10/done_osc_out[0]_MUX_79_o_BUFG driven by BUFGCTRL_X0Y31
+NET "bit10/done_osc_out[0]_MUX_79_o_BUFG" TNM_NET = "TN_bit10/done_osc_out[0]_MUX_79_o_BUFG" ;
+TIMEGRP "TN_bit10/done_osc_out[0]_MUX_79_o_BUFG" AREA_GROUP = "CLKAG_bit10/done_osc_out[0]_MUX_79_o_BUFG" ;
+AREA_GROUP "CLKAG_bit10/done_osc_out[0]_MUX_79_o_BUFG" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
 
 # NOTE: 
 # This report is provided to help reproduce successful clock-region 
@@ -160,7 +255,7 @@ AREA_GROUP "CLKAG_bit22/done_finish2_AND_27_o_BUFG" RANGE =   CLOCKREGION_X0Y0, 
 GLOBAL CLOCK NET LOADS DISTRIBUTION REPORT:
 
 Number of Global Clock Regions : 8
-Number of Global Clock Networks: 16
+Number of Global Clock Networks: 32
 
 Clock Region Assignment: SUCCESSFUL
 
@@ -204,25 +299,25 @@ Clock-Region: <CLOCKREGION_X0Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit17/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit18/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit19/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit20/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit21/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit22/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |bit23/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit26/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit27/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit28/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit29/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     31 |clk_BUFGP
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit11/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit15/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit17/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit21/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit25/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit27/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit3/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit31/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     24 |bit4/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit6/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit7/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit8/done_osc_out[0]_MUX_79_o_BUFG
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    435 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    728 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y1> 
- key resource utilizations (used/available): global-clocks - 0/12 ;
+ key resource utilizations (used/available): global-clocks - 4/12 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |    PS7 |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -231,8 +326,12 @@ Clock-Region: <CLOCKREGION_X1Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit18/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     64 |bit20/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit4/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |bit9/done_osc_out[0]_MUX_79_o_BUFG
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    176 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -246,14 +345,14 @@ Clock-Region: <CLOCKREGION_X0Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     20 |bit23/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit24/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit25/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit30/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |bit31/done_finish2_AND_27_o_BUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |clk_BUFGP
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     24 |bit1/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     60 |bit12/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |bit13/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |bit19/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |bit22/done_osc_out[0]_MUX_79_o_BUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     20 |bit29/done_osc_out[0]_MUX_79_o_BUFG
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    208 | Total 
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    180 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -311,216 +410,254 @@ maybe moved to adjacent clock-regions as long as the "number of clocks per regio
 ######################################################################################
 
 
-Phase 5.30  Global Clock Region Assignment (Checksum:e84e18) REAL time: 39 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:9944bf74) REAL time: 49 secs 
 
 Phase 6.3  Local Placement Optimization
-Phase 6.3  Local Placement Optimization (Checksum:e84e18) REAL time: 39 secs 
+Phase 6.3  Local Placement Optimization (Checksum:9944bf74) REAL time: 50 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:e84e18) REAL time: 39 secs 
+Phase 7.5  Local Placement Optimization (Checksum:9944bf74) REAL time: 50 secs 
 
 Phase 8.8  Global Placement
-......................................................
-...........................................................................................................................................................
-.................................................................................................................................................
-Phase 8.8  Global Placement (Checksum:b91c86b8) REAL time: 51 secs 
+..................
+................................
+..........................................................................................................................................................................................................
+Phase 8.8  Global Placement (Checksum:68ed7f67) REAL time: 55 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:b91c86b8) REAL time: 51 secs 
+Phase 9.5  Local Placement Optimization (Checksum:68ed7f67) REAL time: 55 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:af20a953) REAL time: 51 secs 
+Phase 10.18  Placement Optimization (Checksum:213712ba) REAL time: 55 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:af20a953) REAL time: 51 secs 
+Phase 11.5  Local Placement Optimization (Checksum:213712ba) REAL time: 55 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:af20a953) REAL time: 51 secs 
+Phase 12.34  Placement Validation (Checksum:213712ba) REAL time: 55 secs 
 
-Total REAL time to Placer completion: 54 secs 
-Total CPU  time to Placer completion: 54 secs 
+Total REAL time to Placer completion: 1 mins 
+Total CPU  time to Placer completion: 58 secs 
 Running post-placement packing...
 Writing output files...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit14/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit11/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit7/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit18/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit15/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit9/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit17/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit21/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit2/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit24/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit10/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit20/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit30/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit11/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit8/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit7/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit12/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit7/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit17/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit0/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit13/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit7/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit29/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit3/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit6/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit15/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit14/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit26/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit25/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit9/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit13/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit28/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit31/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit5/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit9/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit12/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit1/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit19/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit23/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit4/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit22/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit1/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit22/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit10/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit27/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit16/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit5/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit14/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit19/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit4/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit31/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit16/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit12/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit24/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit15/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit13/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit6/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit3/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit23/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit31/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit25/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit20/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit2/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit6/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit3/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit18/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit16/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit20/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit1/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit17/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit0/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit8/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit11/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit16/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit14/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit8/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit27/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit8/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit0/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit1/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit18/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit22/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit3/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit29/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit13/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit12/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit6/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit30/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit27/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit26/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit4/done_finish2_AND_27_o is sourced by a combinatorial pin. This
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit4/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit29/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit26/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit24/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit15/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit30/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit10/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit5/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit0/finish1_finish2_OR_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit2/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit21/done_done_MUX_213_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit8/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit21/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit21/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit20/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit20/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit16/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit23/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit15/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit22/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit1/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit1/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit18/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit18/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit30/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit30/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit25/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit0/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit17/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit19/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit19/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit24/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit24/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit3/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit3/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit31/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit31/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit2/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit5/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit5/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit4/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit10/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit11/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit12/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit12/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit13/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit14/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit26/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit26/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit28/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit6/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit6/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit27/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit27/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit29/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit7/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit9/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit2/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit0/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit7/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit4/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit8/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit9/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit14/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit13/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit23/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit25/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit11/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit17/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit16/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit15/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit22/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit10/done_osc_out[0]_AND_25_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit29/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net bit28/done_osc_out[1]_AND_49_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit2/done_done_MUX_213_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit28/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit28/done_done_MUX_213_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit21/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit5/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit11/done_done_MUX_213_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit19/done_done_MUX_213_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit23/done_done_MUX_213_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit9/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit10/done_done_MUX_213_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net bit25/done_done_MUX_75_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <sel<0>_IBUF> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <sel<1>_IBUF> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <sel<2>_IBUF> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <sel<3>_IBUF> is incomplete. The signal does not drive any load pins in the
+   design.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   81
+Number of warnings:  100
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,436 out of 126,800    1%
-    Number used as Flip Flops:                  59
-    Number used as Latches:                  1,377
+  Number of Slice Registers:                 2,236 out of 126,800    1%
+    Number used as Flip Flops:                  60
+    Number used as Latches:                  2,176
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,260 out of  63,400    3%
-    Number used as logic:                    2,194 out of  63,400    3%
-      Number using O6 output only:             490
-      Number using O5 output only:           1,203
-      Number using O5 and O6:                  501
+  Number of Slice LUTs:                      5,522 out of  63,400    8%
+    Number used as logic:                    5,456 out of  63,400    8%
+      Number using O6 output only:           2,856
+      Number using O5 output only:           1,971
+      Number using O5 and O6:                  629
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  19,000    0%
     Number used exclusively as route-thrus:     66
@@ -529,14 +666,14 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   768 out of  15,850    4%
-  Number of LUT Flip Flop pairs used:        2,293
-    Number with an unused Flip Flop:           857 out of   2,293   37%
-    Number with an unused LUT:                  33 out of   2,293    1%
-    Number of fully used LUT-FF pairs:       1,403 out of   2,293   61%
-    Number of unique control sets:             163
+  Number of occupied Slices:                 1,672 out of  15,850   10%
+  Number of LUT Flip Flop pairs used:        5,548
+    Number with an unused Flip Flop:         3,312 out of   5,548   59%
+    Number with an unused LUT:                  26 out of   5,548    1%
+    Number of fully used LUT-FF pairs:       2,210 out of   5,548   39%
+    Number of unique control sets:             132
     Number of slice register sites lost
-      to control set restrictions:             940 out of 126,800    1%
+      to control set restrictions:             660 out of 126,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -549,21 +686,17 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                        24 out of     210   11%
     Number of LOCed IOBs:                       24 out of      24  100%
-    IOB Latches:                                 1
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
   Number of RAMB18E1/FIFO18E1s:                  0 out of     270    0%
-  Number of BUFG/BUFGCTRLs:                     16 out of      32   50%
-    Number used as BUFGs:                       16
+  Number of BUFG/BUFGCTRLs:                     32 out of      32  100%
+    Number used as BUFGs:                       32
     Number used as BUFGCTRLs:                    0
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
   Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
   Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
-  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        1 out of     300    1%
-    Number used as OLOGICE2s:                    1
-    Number used as OLOGICE3s:                    0
-    Number used as OSERDESE2s:                   0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     300    0%
   Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
   Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      24    0%
   Number of BSCANs:                              0 out of       4    0%
@@ -587,11 +720,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.81
+Average Fanout of Non-Clock Nets:                3.74
 
-Peak Memory Usage:  937 MB
-Total REAL time to MAP completion:  56 secs 
-Total CPU time to MAP completion (all processors):   57 secs 
+Peak Memory Usage:  976 MB
+Total REAL time to MAP completion:  1 mins 4 secs 
+Total CPU time to MAP completion (all processors):   1 mins 1 secs 
 
 Mapping completed.
 See MAP report file "final_topmodule_map.mrp" for details.

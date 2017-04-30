@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity puf_design is
 port (enable : in std_logic;
-       osc_out : out std_logic_vector(2 downto 0));
+       osc_out : out std_logic_vector(3 downto 0));
 end puf_design;
 
 architecture Behavioral of puf_design is
@@ -45,9 +45,10 @@ generic (RO_ChainLength: integer
 end component;
 
 begin
-RO1 : RO generic map (5) port map (enable,osc_out(0));
-RO2 : RO generic map (5) port map (enable,osc_out(1)); 
-RO3 : RO generic map (5) port map (enable,osc_out(2));
+RO1 : RO generic map (7) port map (enable,osc_out(0));
+RO2 : RO generic map (7) port map (enable,osc_out(1)); 
+RO3 : RO generic map (7) port map (enable,osc_out(2));
+RO4 : RO generic map (7) port map (enable,osc_out(3));
 
 end Behavioral;
 

@@ -17,7 +17,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project ID (random number)</B></TD>
-<TD><xtag-property name="RandomID">ebd00d1d79f7469fbfc811b272f8e3e7</xtag-property>.<xtag-property name="ProjectID">A2133741CBE444C2A9107AE5346FB70C</xtag-property>.<xtag-property name="ProjectIteration">40</xtag-property></TD>
+<TD><xtag-property name="RandomID">ebd00d1d79f7469fbfc811b272f8e3e7</xtag-property>.<xtag-property name="ProjectID">A2133741CBE444C2A9107AE5346FB70C</xtag-property>.<xtag-property name="ProjectIteration">79</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Target Package:</B></TD>
 <TD><xtag-property name="TargetPackage">csg324</xtag-property></TD>
 </TR>
@@ -29,7 +29,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Date Generated</B></TD>
-<TD><xtag-property name="Date Generated">2017-04-27T03:39:51</xtag-property></TD>
+<TD><xtag-property name="Date Generated">2017-04-29T16:40:46</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Tool Flow</B></TD>
 <TD><xtag-property name="ToolFlow">ISE</xtag-property></TD>
 </TR>
@@ -69,12 +69,12 @@
 <TD>
 <xtag-group><xtag-group-name name="Adders/Subtractors=64">Adders/Subtractors=64</xtag-group-name>
 <UL>
-<LI><xtag-item1>20-bit adder=64</xtag-item1></LI>
+<LI><xtag-item1>32-bit adder=64</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="Comparators=32">Comparators=32</xtag-group-name>
 <UL>
-<LI><xtag-item1>20-bit comparator lessequal=32</xtag-item1></LI>
+<LI><xtag-item1>32-bit comparator lessequal=32</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="Counters=34">Counters=34</xtag-group-name>
@@ -84,15 +84,22 @@
 <LI><xtag-item1>4-bit up counter=1</xtag-item1></LI>
 </UL>
 </xtag-group>
-<xtag-group><xtag-group-name name="Multiplexers=74">Multiplexers=74</xtag-group-name>
+<xtag-group><xtag-group-name name="Multiplexers=2570">Multiplexers=2570</xtag-group-name>
 <UL>
+<LI><xtag-item1>1-bit 2-to-1 multiplexer=2368</xtag-item1></LI>
 <LI><xtag-item1>1-bit 4-to-1 multiplexer=64</xtag-item1></LI>
+<LI><xtag-item1>32-bit 2-to-1 multiplexer=128</xtag-item1></LI>
 <LI><xtag-item1>8-bit 2-to-1 multiplexer=10</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="RAMs=9">RAMs=9</xtag-group-name>
 <UL>
 <LI><xtag-item1>16x8-bit single-port distributed Read Only RAM=9</xtag-item1></LI>
+</UL>
+</xtag-group>
+<xtag-group><xtag-group-name name="Registers=32">Registers=32</xtag-group-name>
+<UL>
+<LI><xtag-item1>Flip-Flops=32</xtag-item1></LI>
 </UL>
 </xtag-group>
 </TD>
@@ -104,81 +111,75 @@
 <LI><xtag-item1>AGG_BONDED_IO=24</xtag-item1></LI>
 <LI><xtag-item1>AGG_IO=24</xtag-item1></LI>
 <LI><xtag-item1>AGG_LOCED_IO=24</xtag-item1></LI>
-<LI><xtag-item1>AGG_SLICE=768</xtag-item1></LI>
+<LI><xtag-item1>AGG_SLICE=1672</xtag-item1></LI>
 <LI><xtag-item1>NUM_BONDED_IOB33=24</xtag-item1></LI>
-<LI><xtag-item1>NUM_BSFULL=1403</xtag-item1></LI>
-<LI><xtag-item1>NUM_BSLUTONLY=857</xtag-item1></LI>
-<LI><xtag-item1>NUM_BSREGONLY=33</xtag-item1></LI>
-<LI><xtag-item1>NUM_BSUSED=2293</xtag-item1></LI>
-<LI><xtag-item1>NUM_BUFG=16</xtag-item1></LI>
-<LI><xtag-item1>NUM_IOB_LATCH=1</xtag-item1></LI>
+<LI><xtag-item1>NUM_BSFULL=2210</xtag-item1></LI>
+<LI><xtag-item1>NUM_BSLUTONLY=3312</xtag-item1></LI>
+<LI><xtag-item1>NUM_BSREGONLY=26</xtag-item1></LI>
+<LI><xtag-item1>NUM_BSUSED=5548</xtag-item1></LI>
+<LI><xtag-item1>NUM_BUFG=32</xtag-item1></LI>
 <LI><xtag-item1>NUM_LOCED_IOB33=24</xtag-item1></LI>
-<LI><xtag-item1>NUM_LOGIC_O5ANDO6=501</xtag-item1></LI>
-<LI><xtag-item1>NUM_LOGIC_O5ONLY=1203</xtag-item1></LI>
-<LI><xtag-item1>NUM_LOGIC_O6ONLY=490</xtag-item1></LI>
+<LI><xtag-item1>NUM_LOGIC_O5ANDO6=629</xtag-item1></LI>
+<LI><xtag-item1>NUM_LOGIC_O5ONLY=1971</xtag-item1></LI>
+<LI><xtag-item1>NUM_LOGIC_O6ONLY=2856</xtag-item1></LI>
 <LI><xtag-item1>NUM_LUT_RT_DRIVES_CARRY4=66</xtag-item1></LI>
 <LI><xtag-item1>NUM_LUT_RT_EXO6=66</xtag-item1></LI>
-<LI><xtag-item1>NUM_LUT_RT_O6=1203</xtag-item1></LI>
-<LI><xtag-item1>NUM_OLOGICE2=1</xtag-item1></LI>
-<LI><xtag-item1>NUM_SLICEL=768</xtag-item1></LI>
-<LI><xtag-item1>NUM_SLICE_CARRY4=430</xtag-item1></LI>
-<LI><xtag-item1>NUM_SLICE_CONTROLSET=163</xtag-item1></LI>
-<LI><xtag-item1>NUM_SLICE_CYINIT=4062</xtag-item1></LI>
-<LI><xtag-item1>NUM_SLICE_FF=59</xtag-item1></LI>
-<LI><xtag-item1>NUM_SLICE_LATCH=1377</xtag-item1></LI>
-<LI><xtag-item1>NUM_SLICE_UNUSEDCTRL=334</xtag-item1></LI>
-<LI><xtag-item1>NUM_UNUSABLE_FF_BELS=940</xtag-item1></LI>
+<LI><xtag-item1>NUM_LUT_RT_O6=1971</xtag-item1></LI>
+<LI><xtag-item1>NUM_SLICEL=1672</xtag-item1></LI>
+<LI><xtag-item1>NUM_SLICE_CARRY4=654</xtag-item1></LI>
+<LI><xtag-item1>NUM_SLICE_CONTROLSET=132</xtag-item1></LI>
+<LI><xtag-item1>NUM_SLICE_CYINIT=8220</xtag-item1></LI>
+<LI><xtag-item1>NUM_SLICE_FF=60</xtag-item1></LI>
+<LI><xtag-item1>NUM_SLICE_LATCH=2176</xtag-item1></LI>
+<LI><xtag-item1>NUM_SLICE_UNUSEDCTRL=1013</xtag-item1></LI>
+<LI><xtag-item1>NUM_UNUSABLE_FF_BELS=660</xtag-item1></LI>
 </UL>
 </xtag-group>
 </TD>
 <TD>
 <xtag-group><xtag-group-name name="NetStatistics">NetStatistics</xtag-group-name>
 <UL>
-<LI><xtag-item1>NumNets_Active=2596</xtag-item1></LI>
-<LI><xtag-item1>NumNets_Gnd=1</xtag-item1></LI>
+<LI><xtag-item1>NumNets_Active=5808</xtag-item1></LI>
 <LI><xtag-item1>NumNets_Vcc=1</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_BENTQUAD=250</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_BOUNCEACROSS=117</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_BOUNCEIN=196</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_BUFGROUT=16</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_BUFINP2OUT=17</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_CLKPIN=449</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_DOUBLE=1728</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_GENERIC=8</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_GLOBAL=188</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_HLONG=10</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_HQUAD=165</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_INPUT=689</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_IOBIN2OUT=22</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_IOBOUTPUT=23</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_LUTINPUT=5320</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_OUTBOUND=2235</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_OUTPUT=2625</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_BENTQUAD=856</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_BOUNCEACROSS=488</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_BOUNCEIN=558</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_BUFGROUT=32</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_BUFINP2OUT=38</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_CLKPIN=691</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_DOUBLE=5704</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_GENERIC=4</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_GLOBAL=692</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_HLONG=18</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_HQUAD=300</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_INPUT=608</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_IOBIN2OUT=19</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_IOBOUTPUT=19</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_LUTINPUT=20464</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_OUTBOUND=5205</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_OUTPUT=5818</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_PADINPUT=16</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_PADOUTPUT=7</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_PINBOUNCE=659</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_PINFEED=6140</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_SINGLE=3097</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_VLONG=18</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_VLONG12=10</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_VQUAD=185</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Vcc_HVCCGNDOUT=404</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Vcc_INPUT=64</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_PADOUTPUT=3</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_PINBOUNCE=1025</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_PINFEED=21223</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_SINGLE=9650</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_VLONG=89</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_VLONG12=82</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_VQUAD=1114</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Vcc_HVCCGNDOUT=582</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Vcc_IOBIN2OUT=1</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Vcc_IOBOUTPUT=1</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Vcc_LUTINPUT=1704</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Vcc_LUTINPUT=2600</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Vcc_PADINPUT=1</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Vcc_PINBOUNCE=64</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Vcc_PINFEED=1769</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Vcc_PINFEED=2601</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="SiteStatistics">SiteStatistics</xtag-group-name>
 <UL>
-<LI><xtag-item1>BUFG-BUFGCTRL=16</xtag-item1></LI>
+<LI><xtag-item1>BUFG-BUFGCTRL=32</xtag-item1></LI>
 <LI><xtag-item1>IOB33-IOB33M=12</xtag-item1></LI>
 <LI><xtag-item1>IOB33-IOB33S=10</xtag-item1></LI>
-<LI><xtag-item1>OLOGICE2-OLOGICE3=1</xtag-item1></LI>
-<LI><xtag-item1>SLICEL-SLICEM=255</xtag-item1></LI>
+<LI><xtag-item1>SLICEL-SLICEM=555</xtag-item1></LI>
 </UL>
 </xtag-group>
 </TD>
@@ -187,21 +188,19 @@
 <TD>
 <xtag-group><xtag-group-name name="SiteSummary">SiteSummary</xtag-group-name>
 <UL>
-<LI><xtag-item2>BUFG=16</xtag-item2></LI>
-<LI><xtag-item2>BUFG_BUFG=16</xtag-item2></LI>
-<LI><xtag-item2>CARRY4=430</xtag-item2></LI>
+<LI><xtag-item2>BUFG=32</xtag-item2></LI>
+<LI><xtag-item2>BUFG_BUFG=32</xtag-item2></LI>
+<LI><xtag-item2>CARRY4=654</xtag-item2></LI>
 <LI><xtag-item2>HARD0=66</xtag-item2></LI>
 <LI><xtag-item2>HARD1=32</xtag-item2></LI>
 <LI><xtag-item2>IOB33=24</xtag-item2></LI>
 <LI><xtag-item2>IOB33_INBUF_EN=7</xtag-item2></LI>
 <LI><xtag-item2>IOB33_OUTBUF=17</xtag-item2></LI>
-<LI><xtag-item2>LUT5=1704</xtag-item2></LI>
-<LI><xtag-item2>LUT6=2260</xtag-item2></LI>
-<LI><xtag-item2>OLOGICE2=1</xtag-item2></LI>
-<LI><xtag-item2>OLOGICE2_OUTFF=1</xtag-item2></LI>
+<LI><xtag-item2>LUT5=2600</xtag-item2></LI>
+<LI><xtag-item2>LUT6=5522</xtag-item2></LI>
 <LI><xtag-item2>PAD=24</xtag-item2></LI>
-<LI><xtag-item2>REG_INIT=1436</xtag-item2></LI>
-<LI><xtag-item2>SLICEL=768</xtag-item2></LI>
+<LI><xtag-item2>REG_INIT=2236</xtag-item2></LI>
+<LI><xtag-item2>SLICEL=1672</xtag-item2></LI>
 </UL>
 </xtag-group>
 </TD>
@@ -213,18 +212,18 @@
 <TD>
 <xtag-group><xtag-group-name name="FF_INIT">FF_INIT</xtag-group-name>
 <UL>
-<LI><xtag-item3>CK=[CK:1] [CK_INV:0]</xtag-item3></LI>
-<LI><xtag-item3>FFINIT=[INIT0:1]</xtag-item3></LI>
-<LI><xtag-item3>FFSR=[SRLOW:1]</xtag-item3></LI>
-<LI><xtag-item3>SYNC_ATTR=[SYNC:1]</xtag-item3></LI>
+<LI><xtag-item3>CK=[CK:4] [CK_INV:0]</xtag-item3></LI>
+<LI><xtag-item3>FFINIT=[INIT0:4]</xtag-item3></LI>
+<LI><xtag-item3>FFSR=[SRLOW:4]</xtag-item3></LI>
+<LI><xtag-item3>SYNC_ATTR=[ASYNC:4]</xtag-item3></LI>
 </UL>
-</TD>
-<TD>
 </xtag-group>
 <xtag-group><xtag-group-name name="IOB33_INBUF_EN">IOB33_INBUF_EN</xtag-group-name>
 <UL>
 <LI><xtag-item3>IBUF_LOW_PWR=[TRUE:7]</xtag-item3></LI>
 </UL>
+</TD>
+<TD>
 </xtag-group>
 <xtag-group><xtag-group-name name="OLOGICE2">OLOGICE2</xtag-group-name>
 <UL>
@@ -246,18 +245,23 @@
 </xtag-group>
 <xtag-group><xtag-group-name name="REG_INIT">REG_INIT</xtag-group-name>
 <UL>
-<LI><xtag-item3>CK=[CK:59] [CK_INV:1377]</xtag-item3></LI>
-<LI><xtag-item3>FFINIT=[INIT0:1436]</xtag-item3></LI>
-<LI><xtag-item3>FFSR=[SRLOW:1435] [SRHIGH:1]</xtag-item3></LI>
-<LI><xtag-item3>LATCH_OR_FF=[FF:59] [LATCH:1377]</xtag-item3></LI>
-<LI><xtag-item3>SYNC_ATTR=[ASYNC:1425] [SYNC:11]</xtag-item3></LI>
+<LI><xtag-item3>CK=[CK:60] [CK_INV:2176]</xtag-item3></LI>
+<LI><xtag-item3>FFINIT=[INIT0:2236]</xtag-item3></LI>
+<LI><xtag-item3>FFSR=[SRLOW:2236]</xtag-item3></LI>
+<LI><xtag-item3>LATCH_OR_FF=[FF:60] [LATCH:2176]</xtag-item3></LI>
+<LI><xtag-item3>SYNC_ATTR=[ASYNC:2222] [SYNC:14]</xtag-item3></LI>
 </UL>
 </TD>
 <TD>
 </xtag-group>
+<xtag-group><xtag-group-name name="SELMUX2_1">SELMUX2_1</xtag-group-name>
+<UL>
+<LI><xtag-item3>0=[0:1] [0_INV:0]</xtag-item3></LI>
+</UL>
+</xtag-group>
 <xtag-group><xtag-group-name name="SLICEL">SLICEL</xtag-group-name>
 <UL>
-<LI><xtag-item3>CLK=[CLK:17] [CLK_INV:417]</xtag-item3></LI>
+<LI><xtag-item3>CLK=[CLK:18] [CLK_INV:641]</xtag-item3></LI>
 </UL>
 </xtag-group>
 </TD>
@@ -269,51 +273,47 @@
 <TD>
 <xtag-group><xtag-group-name name="BUFG">BUFG</xtag-group-name>
 <UL>
-<LI><xtag-item1>I0=16</xtag-item1></LI>
-<LI><xtag-item1>O=16</xtag-item1></LI>
+<LI><xtag-item1>I0=32</xtag-item1></LI>
+<LI><xtag-item1>O=32</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="BUFG_BUFG">BUFG_BUFG</xtag-group-name>
 <UL>
-<LI><xtag-item1>I0=16</xtag-item1></LI>
-<LI><xtag-item1>O=16</xtag-item1></LI>
+<LI><xtag-item1>I0=32</xtag-item1></LI>
+<LI><xtag-item1>O=32</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="CARRY4">CARRY4</xtag-group-name>
 <UL>
-<LI><xtag-item1>CIN=332</xtag-item1></LI>
-<LI><xtag-item1>CO0=32</xtag-item1></LI>
-<LI><xtag-item1>CO3=332</xtag-item1></LI>
+<LI><xtag-item1>CIN=556</xtag-item1></LI>
+<LI><xtag-item1>CO2=32</xtag-item1></LI>
+<LI><xtag-item1>CO3=556</xtag-item1></LI>
 <LI><xtag-item1>CYINIT=98</xtag-item1></LI>
-<LI><xtag-item1>DI0=430</xtag-item1></LI>
-<LI><xtag-item1>DI1=398</xtag-item1></LI>
-<LI><xtag-item1>DI2=397</xtag-item1></LI>
-<LI><xtag-item1>DI3=332</xtag-item1></LI>
-<LI><xtag-item1>O0=334</xtag-item1></LI>
-<LI><xtag-item1>O1=334</xtag-item1></LI>
-<LI><xtag-item1>O2=334</xtag-item1></LI>
-<LI><xtag-item1>O3=333</xtag-item1></LI>
-<LI><xtag-item1>S0=430</xtag-item1></LI>
-<LI><xtag-item1>S1=398</xtag-item1></LI>
-<LI><xtag-item1>S2=398</xtag-item1></LI>
-<LI><xtag-item1>S3=397</xtag-item1></LI>
+<LI><xtag-item1>DI0=654</xtag-item1></LI>
+<LI><xtag-item1>DI1=654</xtag-item1></LI>
+<LI><xtag-item1>DI2=653</xtag-item1></LI>
+<LI><xtag-item1>DI3=556</xtag-item1></LI>
+<LI><xtag-item1>O0=526</xtag-item1></LI>
+<LI><xtag-item1>O1=526</xtag-item1></LI>
+<LI><xtag-item1>O2=526</xtag-item1></LI>
+<LI><xtag-item1>O3=525</xtag-item1></LI>
+<LI><xtag-item1>S0=654</xtag-item1></LI>
+<LI><xtag-item1>S1=654</xtag-item1></LI>
+<LI><xtag-item1>S2=654</xtag-item1></LI>
+<LI><xtag-item1>S3=621</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="FF_INIT">FF_INIT</xtag-group-name>
 <UL>
-<LI><xtag-item1>CE=1</xtag-item1></LI>
-<LI><xtag-item1>CK=1</xtag-item1></LI>
-<LI><xtag-item1>D=1</xtag-item1></LI>
-<LI><xtag-item1>Q=1</xtag-item1></LI>
-<LI><xtag-item1>SR=1</xtag-item1></LI>
+<LI><xtag-item1>CK=4</xtag-item1></LI>
+<LI><xtag-item1>D=4</xtag-item1></LI>
+<LI><xtag-item1>Q=4</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="HARD0">HARD0</xtag-group-name>
 <UL>
 <LI><xtag-item1>0=66</xtag-item1></LI>
 </UL>
-</TD>
-<TD>
 </xtag-group>
 <xtag-group><xtag-group-name name="HARD1">HARD1</xtag-group-name>
 <UL>
@@ -326,6 +326,8 @@
 <LI><xtag-item1>O=17</xtag-item1></LI>
 <LI><xtag-item1>PAD=24</xtag-item1></LI>
 </UL>
+</TD>
+<TD>
 </xtag-group>
 <xtag-group><xtag-group-name name="IOB33_INBUF_EN">IOB33_INBUF_EN</xtag-group-name>
 <UL>
@@ -341,23 +343,23 @@
 </xtag-group>
 <xtag-group><xtag-group-name name="LUT5">LUT5</xtag-group-name>
 <UL>
-<LI><xtag-item1>A1=56</xtag-item1></LI>
-<LI><xtag-item1>A2=382</xtag-item1></LI>
-<LI><xtag-item1>A3=370</xtag-item1></LI>
-<LI><xtag-item1>A4=435</xtag-item1></LI>
-<LI><xtag-item1>A5=387</xtag-item1></LI>
-<LI><xtag-item1>O5=1704</xtag-item1></LI>
+<LI><xtag-item1>A1=24</xtag-item1></LI>
+<LI><xtag-item1>A2=542</xtag-item1></LI>
+<LI><xtag-item1>A3=562</xtag-item1></LI>
+<LI><xtag-item1>A4=563</xtag-item1></LI>
+<LI><xtag-item1>A5=547</xtag-item1></LI>
+<LI><xtag-item1>O5=2600</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="LUT6">LUT6</xtag-group-name>
 <UL>
-<LI><xtag-item1>A1=333</xtag-item1></LI>
-<LI><xtag-item1>A2=707</xtag-item1></LI>
-<LI><xtag-item1>A3=777</xtag-item1></LI>
-<LI><xtag-item1>A4=2116</xtag-item1></LI>
-<LI><xtag-item1>A5=813</xtag-item1></LI>
-<LI><xtag-item1>A6=2194</xtag-item1></LI>
-<LI><xtag-item1>O6=2260</xtag-item1></LI>
+<LI><xtag-item1>A1=2631</xtag-item1></LI>
+<LI><xtag-item1>A2=3167</xtag-item1></LI>
+<LI><xtag-item1>A3=3173</xtag-item1></LI>
+<LI><xtag-item1>A4=3266</xtag-item1></LI>
+<LI><xtag-item1>A5=5223</xtag-item1></LI>
+<LI><xtag-item1>A6=5520</xtag-item1></LI>
+<LI><xtag-item1>O6=5522</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="OLOGICE2">OLOGICE2</xtag-group-name>
@@ -375,70 +377,77 @@
 <LI><xtag-item1>Q=1</xtag-item1></LI>
 <LI><xtag-item1>SR=1</xtag-item1></LI>
 </UL>
-</TD>
-<TD>
 </xtag-group>
 <xtag-group><xtag-group-name name="PAD">PAD</xtag-group-name>
 <UL>
 <LI><xtag-item1>PAD=24</xtag-item1></LI>
 </UL>
+</TD>
+<TD>
 </xtag-group>
 <xtag-group><xtag-group-name name="REG_INIT">REG_INIT</xtag-group-name>
 <UL>
-<LI><xtag-item1>CE=1312</xtag-item1></LI>
-<LI><xtag-item1>CK=1436</xtag-item1></LI>
-<LI><xtag-item1>D=1436</xtag-item1></LI>
-<LI><xtag-item1>Q=1436</xtag-item1></LI>
-<LI><xtag-item1>SR=12</xtag-item1></LI>
+<LI><xtag-item1>CE=29</xtag-item1></LI>
+<LI><xtag-item1>CK=2236</xtag-item1></LI>
+<LI><xtag-item1>D=2236</xtag-item1></LI>
+<LI><xtag-item1>Q=2236</xtag-item1></LI>
+<LI><xtag-item1>SR=43</xtag-item1></LI>
+</UL>
+</xtag-group>
+<xtag-group><xtag-group-name name="SELMUX2_1">SELMUX2_1</xtag-group-name>
+<UL>
+<LI><xtag-item1>0=1</xtag-item1></LI>
+<LI><xtag-item1>1=1</xtag-item1></LI>
+<LI><xtag-item1>OUT=1</xtag-item1></LI>
+<LI><xtag-item1>S0=1</xtag-item1></LI>
 </UL>
 </xtag-group>
 <xtag-group><xtag-group-name name="SLICEL">SLICEL</xtag-group-name>
 <UL>
-<LI><xtag-item1>A=215</xtag-item1></LI>
-<LI><xtag-item1>A1=131</xtag-item1></LI>
-<LI><xtag-item1>A2=262</xtag-item1></LI>
-<LI><xtag-item1>A3=284</xtag-item1></LI>
-<LI><xtag-item1>A4=616</xtag-item1></LI>
-<LI><xtag-item1>A5=290</xtag-item1></LI>
-<LI><xtag-item1>A6=672</xtag-item1></LI>
-<LI><xtag-item1>AMUX=75</xtag-item1></LI>
-<LI><xtag-item1>AQ=415</xtag-item1></LI>
-<LI><xtag-item1>AX=58</xtag-item1></LI>
-<LI><xtag-item1>B=165</xtag-item1></LI>
-<LI><xtag-item1>B1=111</xtag-item1></LI>
-<LI><xtag-item1>B2=184</xtag-item1></LI>
-<LI><xtag-item1>B3=191</xtag-item1></LI>
-<LI><xtag-item1>B4=523</xtag-item1></LI>
-<LI><xtag-item1>B5=197</xtag-item1></LI>
-<LI><xtag-item1>B6=569</xtag-item1></LI>
-<LI><xtag-item1>BMUX=20</xtag-item1></LI>
-<LI><xtag-item1>BQ=338</xtag-item1></LI>
-<LI><xtag-item1>BX=2</xtag-item1></LI>
-<LI><xtag-item1>C=107</xtag-item1></LI>
-<LI><xtag-item1>C1=77</xtag-item1></LI>
-<LI><xtag-item1>C2=158</xtag-item1></LI>
-<LI><xtag-item1>C3=163</xtag-item1></LI>
-<LI><xtag-item1>C4=493</xtag-item1></LI>
-<LI><xtag-item1>C5=167</xtag-item1></LI>
-<LI><xtag-item1>C6=510</xtag-item1></LI>
-<LI><xtag-item1>CE=352</xtag-item1></LI>
-<LI><xtag-item1>CIN=332</xtag-item1></LI>
-<LI><xtag-item1>CLK=434</xtag-item1></LI>
-<LI><xtag-item1>CMUX=53</xtag-item1></LI>
-<LI><xtag-item1>COUT=332</xtag-item1></LI>
-<LI><xtag-item1>CQ=338</xtag-item1></LI>
-<LI><xtag-item1>CX=2</xtag-item1></LI>
-<LI><xtag-item1>D=98</xtag-item1></LI>
-<LI><xtag-item1>D1=49</xtag-item1></LI>
-<LI><xtag-item1>D2=136</xtag-item1></LI>
-<LI><xtag-item1>D3=155</xtag-item1></LI>
-<LI><xtag-item1>D4=484</xtag-item1></LI>
-<LI><xtag-item1>D5=159</xtag-item1></LI>
-<LI><xtag-item1>D6=443</xtag-item1></LI>
-<LI><xtag-item1>DMUX=47</xtag-item1></LI>
-<LI><xtag-item1>DQ=345</xtag-item1></LI>
+<LI><xtag-item1>A=287</xtag-item1></LI>
+<LI><xtag-item1>A1=751</xtag-item1></LI>
+<LI><xtag-item1>A2=929</xtag-item1></LI>
+<LI><xtag-item1>A3=930</xtag-item1></LI>
+<LI><xtag-item1>A4=941</xtag-item1></LI>
+<LI><xtag-item1>A5=1447</xtag-item1></LI>
+<LI><xtag-item1>A6=1528</xtag-item1></LI>
+<LI><xtag-item1>AMUX=546</xtag-item1></LI>
+<LI><xtag-item1>AQ=623</xtag-item1></LI>
+<LI><xtag-item1>AX=26</xtag-item1></LI>
+<LI><xtag-item1>B=234</xtag-item1></LI>
+<LI><xtag-item1>B1=693</xtag-item1></LI>
+<LI><xtag-item1>B2=827</xtag-item1></LI>
+<LI><xtag-item1>B3=835</xtag-item1></LI>
+<LI><xtag-item1>B4=847</xtag-item1></LI>
+<LI><xtag-item1>B5=1352</xtag-item1></LI>
+<LI><xtag-item1>B6=1410</xtag-item1></LI>
+<LI><xtag-item1>BMUX=531</xtag-item1></LI>
+<LI><xtag-item1>BQ=536</xtag-item1></LI>
+<LI><xtag-item1>BX=3</xtag-item1></LI>
+<LI><xtag-item1>C=114</xtag-item1></LI>
+<LI><xtag-item1>C1=595</xtag-item1></LI>
+<LI><xtag-item1>C2=731</xtag-item1></LI>
+<LI><xtag-item1>C3=736</xtag-item1></LI>
+<LI><xtag-item1>C4=747</xtag-item1></LI>
+<LI><xtag-item1>C5=1252</xtag-item1></LI>
+<LI><xtag-item1>C6=1300</xtag-item1></LI>
+<LI><xtag-item1>CE=8</xtag-item1></LI>
+<LI><xtag-item1>CIN=556</xtag-item1></LI>
+<LI><xtag-item1>CLK=659</xtag-item1></LI>
+<LI><xtag-item1>CMUX=559</xtag-item1></LI>
+<LI><xtag-item1>COUT=556</xtag-item1></LI>
+<LI><xtag-item1>CQ=544</xtag-item1></LI>
+<LI><xtag-item1>D=142</xtag-item1></LI>
+<LI><xtag-item1>D1=595</xtag-item1></LI>
+<LI><xtag-item1>D2=713</xtag-item1></LI>
+<LI><xtag-item1>D3=720</xtag-item1></LI>
+<LI><xtag-item1>D4=731</xtag-item1></LI>
+<LI><xtag-item1>D5=1172</xtag-item1></LI>
+<LI><xtag-item1>D6=1282</xtag-item1></LI>
+<LI><xtag-item1>DMUX=540</xtag-item1></LI>
+<LI><xtag-item1>DQ=533</xtag-item1></LI>
 <LI><xtag-item1>DX=3</xtag-item1></LI>
-<LI><xtag-item1>SR=4</xtag-item1></LI>
+<LI><xtag-item1>SR=12</xtag-item1></LI>
 </UL>
 </TD>
 <TD>
@@ -714,6 +723,272 @@
 <LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
 <LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
 <LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>netgen -intstyle ise -ar Structure -tm &lt;design&gt; -w -dir netgen/synthesis -ofmt vhdl -sim &lt;fname&gt;.ngc &lt;fname&gt;.vhd</xtag-cmdline></LI>
+<LI><xtag-cmdline>netgen -intstyle ise -s 1  -pcf &lt;fname&gt;.pcf -rpw 100 -tpw 0 -ar Structure -tm &lt;design&gt; -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim &lt;fname&gt;.ncd &lt;fname&gt;.vhd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>netgen -intstyle ise -s 1  -pcf &lt;fname&gt;.pcf -rpw 100 -tpw 0 -ar Structure -tm &lt;design&gt; -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim &lt;fname&gt;.ncd &lt;fname&gt;.vhd</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>netgen -intstyle ise -s 1  -pcf &lt;fname&gt;.pcf -rpw 100 -tpw 0 -ar Structure -tm &lt;design&gt; -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim &lt;fname&gt;.ncd &lt;fname&gt;.vhd</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc7a100t-csg324-1 &lt;ise_file&gt; &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol std -mt 4 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
 <LI><xtag-cmdline>fuse</xtag-cmdline></LI>
 </xtag-section></UL></TD></TR>
 </TABLE>
@@ -731,8 +1006,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>bitgen</xtag-program-name></td>
-  <td><xtag-total-run-started>53</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>52</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>92</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>91</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -741,8 +1016,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>map</xtag-program-name></td>
-  <td><xtag-total-run-started>84</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>71</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>123</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>110</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -751,8 +1026,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>netgen</xtag-program-name></td>
-  <td><xtag-total-run-started>9</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>9</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>13</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>13</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -771,8 +1046,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngdbuild</xtag-program-name></td>
-  <td><xtag-total-run-started>90</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>89</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>139</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>138</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -781,8 +1056,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>par</xtag-program-name></td>
-  <td><xtag-total-run-started>71</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>71</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>110</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>110</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -791,8 +1066,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>trce</xtag-program-name></td>
-  <td><xtag-total-run-started>69</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>69</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>108</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>108</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -811,8 +1086,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>xst</xtag-program-name></td>
-  <td><xtag-total-run-started>178</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>174</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>235</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>229</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -835,7 +1110,7 @@
 <TD><xtag-process-property-name>PROP_MapEffortLevel_virtex5</xtag-process-property-name>=<xtag-process-property-value>Standard</xtag-process-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_PropSpecInProjFile</xtag-design-property-name>=<xtag-design-property-value>Store all values</xtag-design-property-value></TD>
-<TD><xtag-process-property-name>PROP_SelectedInstanceHierarchicalPath</xtag-process-property-name>=<xtag-process-property-value>/final_topmodule</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_SelectedInstanceHierarchicalPath</xtag-process-property-name>=<xtag-process-property-value>/final_topmodule/bit0</xtag-process-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_Simulator</xtag-design-property-name>=<xtag-design-property-value>ISim (VHDL/Verilog)</xtag-design-property-value></TD>
 <TD><xtag-process-property-name>PROP_SynthTopFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
@@ -849,11 +1124,14 @@
 </TR><TR><TD><xtag-design-property-name>PROP_intProjectCreationTimestamp</xtag-design-property-name>=<xtag-design-property-value>2017-04-24T14:15:12</xtag-design-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWbtProjectID</xtag-design-property-name>=<xtag-design-property-value>A2133741CBE444C2A9107AE5346FB70C</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>40</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>79</xtag-process-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWorkingDirLocWRTProjDir</xtag-design-property-name>=<xtag-design-property-value>Same</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_intWorkingDirUsed</xtag-design-property-name>=<xtag-design-property-value>No</xtag-design-property-value></TD>
-<TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_behav</xtag-process-property-name>=<xtag-process-property-value>work.final_topmodule</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_behav</xtag-process-property-name>=<xtag-process-property-value>work.freq_counter</xtag-process-property-value></TD>
+
+</TR><TR><TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_par</xtag-process-property-name>=<xtag-process-property-value>work.final_topmodule</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_selectedSimSourceNode</xtag-process-property-name>=<xtag-process-property-value>NlwBlockROC</xtag-process-property-value></TD>
 
 </TR><TR><TD><xtag-process-property-name>PROP_xstReadCores</xtag-process-property-name>=<xtag-process-property-value>false</xtag-process-property-value></TD>
 <TD><xtag-process-property-name>PROPEXT_xilxPAReffortLevel_virtex5</xtag-process-property-name>=<xtag-process-property-value>Standard</xtag-process-property-value></TD>
@@ -880,67 +1158,60 @@
 <xtag-section name="UnisimStatistics">
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=4><B>Unisim Statistics</B></TD></TR>
 <TR ALIGN=CENTER><TD COLSPAN=4><B><xtag-unisim-type-name>NGDBUILD_PRE_UNISIM_SUMMARY</xtag-unisim-type-name></B></TD></TR><TR>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_BUFG</xtag-preunisim-param-name>=<xtag-preunisim-param-value>15</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_BUFGP</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_FD</xtag-preunisim-param-name>=<xtag-preunisim-param-value>48</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_FDR</xtag-preunisim-param-name>=<xtag-preunisim-param-value>11</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_BUFG</xtag-preunisim-param-name>=<xtag-preunisim-param-value>32</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_FD</xtag-preunisim-param-name>=<xtag-preunisim-param-value>17</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_FDCE</xtag-preunisim-param-name>=<xtag-preunisim-param-value>29</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_FDR</xtag-preunisim-param-name>=<xtag-preunisim-param-value>14</xtag-preunisim-param-value></TD>
 </TR>
 <TR>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_GND</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_IBUF</xtag-preunisim-param-name>=<xtag-preunisim-param-value>6</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_INV</xtag-preunisim-param-name>=<xtag-preunisim-param-value>66</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LD</xtag-preunisim-param-name>=<xtag-preunisim-param-value>64</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_IBUF</xtag-preunisim-param-name>=<xtag-preunisim-param-value>3</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_INV</xtag-preunisim-param-name>=<xtag-preunisim-param-value>67</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LD</xtag-preunisim-param-name>=<xtag-preunisim-param-value>2176</xtag-preunisim-param-value></TD>
 </TR>
 <TR>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LDE</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1312</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LDP</xtag-preunisim-param-name>=<xtag-preunisim-param-value>2</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT1</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1397</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT2</xtag-preunisim-param-name>=<xtag-preunisim-param-value>64</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT1</xtag-preunisim-param-name>=<xtag-preunisim-param-value>2229</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT2</xtag-preunisim-param-name>=<xtag-preunisim-param-value>66</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT3</xtag-preunisim-param-name>=<xtag-preunisim-param-value>14</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT4</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1014</xtag-preunisim-param-value></TD>
 </TR>
 <TR>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT3</xtag-preunisim-param-name>=<xtag-preunisim-param-value>111</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT4</xtag-preunisim-param-name>=<xtag-preunisim-param-value>662</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT5</xtag-preunisim-param-name>=<xtag-preunisim-param-value>84</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT6</xtag-preunisim-param-name>=<xtag-preunisim-param-value>315</xtag-preunisim-param-value></TD>
-</TR>
-<TR>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_MUXCY</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1557</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT5</xtag-preunisim-param-name>=<xtag-preunisim-param-value>86</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_LUT6</xtag-preunisim-param-name>=<xtag-preunisim-param-value>2613</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_MUXCY</xtag-preunisim-param-name>=<xtag-preunisim-param-value>2517</xtag-preunisim-param-value></TD>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_OBUF</xtag-preunisim-param-name>=<xtag-preunisim-param-value>17</xtag-preunisim-param-value></TD>
+</TR>
+<TR>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_VCC</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_XORCY</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1335</xtag-preunisim-param-value></TD>
-</TR>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_XORCY</xtag-preunisim-param-name>=<xtag-preunisim-param-value>2103</xtag-preunisim-param-value></TD>
 <TR ALIGN=CENTER><TD COLSPAN=4><B><xtag-unisim-type-name>NGDBUILD_POST_UNISIM_SUMMARY</xtag-unisim-type-name></B></TD></TR><TR>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_BUFG</xtag-postunisim-param-name>=<xtag-postunisim-param-value>16</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_FD</xtag-postunisim-param-name>=<xtag-postunisim-param-value>48</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_FDR</xtag-postunisim-param-name>=<xtag-postunisim-param-value>11</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_BUFG</xtag-postunisim-param-name>=<xtag-postunisim-param-value>32</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_FD</xtag-postunisim-param-name>=<xtag-postunisim-param-value>17</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_FDCE</xtag-postunisim-param-name>=<xtag-postunisim-param-value>29</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_FDR</xtag-postunisim-param-name>=<xtag-postunisim-param-value>14</xtag-postunisim-param-value></TD>
+</TR>
+<TR>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_GND</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_IBUF</xtag-postunisim-param-name>=<xtag-postunisim-param-value>7</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_INV</xtag-postunisim-param-name>=<xtag-postunisim-param-value>67</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LD</xtag-postunisim-param-name>=<xtag-postunisim-param-value>2176</xtag-postunisim-param-value></TD>
 </TR>
 <TR>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_IBUF</xtag-postunisim-param-name>=<xtag-postunisim-param-value>6</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_IBUFG</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_INV</xtag-postunisim-param-name>=<xtag-postunisim-param-value>66</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LD</xtag-postunisim-param-name>=<xtag-postunisim-param-value>64</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT1</xtag-postunisim-param-name>=<xtag-postunisim-param-value>2229</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT2</xtag-postunisim-param-name>=<xtag-postunisim-param-value>66</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT3</xtag-postunisim-param-name>=<xtag-postunisim-param-value>14</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT4</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1014</xtag-postunisim-param-value></TD>
 </TR>
 <TR>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LDE</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1312</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LDP</xtag-postunisim-param-name>=<xtag-postunisim-param-value>2</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT1</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1397</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT2</xtag-postunisim-param-name>=<xtag-postunisim-param-value>64</xtag-postunisim-param-value></TD>
-</TR>
-<TR>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT3</xtag-postunisim-param-name>=<xtag-postunisim-param-value>111</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT4</xtag-postunisim-param-name>=<xtag-postunisim-param-value>662</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT5</xtag-postunisim-param-name>=<xtag-postunisim-param-value>84</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT6</xtag-postunisim-param-name>=<xtag-postunisim-param-value>315</xtag-postunisim-param-value></TD>
-</TR>
-<TR>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_MUXCY</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1557</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT5</xtag-postunisim-param-name>=<xtag-postunisim-param-value>86</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_LUT6</xtag-postunisim-param-name>=<xtag-postunisim-param-value>2613</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_MUXCY</xtag-postunisim-param-name>=<xtag-postunisim-param-value>2517</xtag-postunisim-param-value></TD>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_OBUF</xtag-postunisim-param-name>=<xtag-postunisim-param-value>17</xtag-postunisim-param-value></TD>
+</TR>
+<TR>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_TS_TIMESPEC</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1</xtag-postunisim-param-value></TD>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_VCC</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1</xtag-postunisim-param-value></TD>
-</TR>
-<TR>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_XORCY</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1335</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_XORCY</xtag-postunisim-param-name>=<xtag-postunisim-param-value>2103</xtag-postunisim-param-value></TD>
 </xtag-section></TABLE>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'>
 <xtag-section name="XstCommandLineOptions">
@@ -1015,4 +1286,4 @@
 <TD><xtag-xstoptions-param-name>-equivalent_register_removal</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>YES</xtag-xstoptions-param-value></TD>
 <TD><xtag-xstoptions-param-name>-slice_utilization_ratio_maxmargin</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>5</xtag-xstoptions-param-value></TD>
 </xtag-section></TABLE>
-&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>546 ms, 29864 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>3</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>7</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>6</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>7</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>7 us</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.140625 sec, 345137 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>374 ms, 30032 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>3</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>7</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>6</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>7</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>10001060 ns</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.0625 sec, 659742 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>

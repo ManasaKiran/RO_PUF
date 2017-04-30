@@ -58,10 +58,12 @@ port ( clk : in std_logic;
        do  : out std_logic;
        enable : in std_logic;
 		 sel : in std_logic_vector(3 downto 0);
-       compared_value : out std_logic);
+		 compared_value : out std_logic);
 end component;
 signal done : std_logic_vector(31 downto 0) := (others =>'0');
 signal comp,doutSignal : std_logic_vector(31 downto 0):= (others => '0');
+--signal comp1 : std_logic_vector(31 downto 0) := (others => '0');
+--signal comp2 : std_logic_vector(31 downto 0) := (others => '0');
 --signal done : std_logic := '0';
 
 begin
@@ -151,7 +153,7 @@ with Val select
 				  "11111110" when "1000",
 				  "11111111" when others;
 				  
-doutSignal<= comp;		
+doutsignal <= comp;
 		  
 CONV9: Hex2LED port map (CLK => clk, X => doutSignal(31 downto 28), Y => NAME(0));
 CONV10: Hex2LED port map (CLK => clk, X => doutSignal(27 downto 24), Y => NAME(1));
